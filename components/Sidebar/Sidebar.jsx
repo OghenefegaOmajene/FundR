@@ -2,7 +2,6 @@ import React from 'react'
 import './Sidebar.css'
 import { TbLayoutDashboardFilled } from "react-icons/tb";
 import { FaCalendarAlt } from "react-icons/fa";
-import { IoMdSettings } from "react-icons/io";
 import { FaChartPie } from "react-icons/fa";
 import { FaSackDollar } from "react-icons/fa6";
 import { GiNotebook } from "react-icons/gi";
@@ -16,13 +15,17 @@ const Sidebar = () => {
 
       <div className="sideNavLinks">
         <a href=""><TbLayoutDashboardFilled /> Dashboard</a>
-        <a href=""><FaCalendarAlt /> Calendar</a>
         <a href=""><FaChartPie /> Statistics</a>
         <a href=""><FaSackDollar /> Loans</a>
+        <a href=""><FaCalendarAlt /> Calendar</a>
         <a href=""><GiNotebook /> Activities</a>
       </div>
         
-      <a href="" className='logOut'><IoLogOut /> Log Out</a>
+      <div className="logOutBtn">
+        <a href="" className='logOut'><IoLogOut /> Log Out</a>
+      </div>
+
+    
         
     </div>
   )

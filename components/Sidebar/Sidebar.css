@@ -1,27 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 .sideNav{
-    width: 20%;
-    height: 100%;
-    background-color: white;
+    width: 15%;
+    /* height: 100%; */
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(50px);
-    border: 1px solid black;
+    /* position: sticky; */
+    /* border: 1px solid black; */
+    height: 100vh; /* Ensure it takes the full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10px;
+    justify-content: space-evenly;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: "MuseoModerno", serif;
+    z-index: 10;
 }    
 img{
     width: 100%;
-    /* height: 200px; */
-    border: 1px solid black;
+    height: 80px;
+    /* border: 1px solid black; */
 }
 .sideNavLinks{
     width: 100%;
     height: 300px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+    padding-left: 20px;
+}
+.logOutBtn{
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+.logOut{ 
+    width: 100%;
+    height: 100%;
+}
+.sideNavLinks a{
+    height: 100px;
 }
 .sideNavLinks a, .logOut{
     color: #A3A7BE;
@@ -30,8 +51,7 @@ img{
     align-items: center;
     gap: 10px;
     font-size: 18px;
-    border: 1px solid black;
-    height: 100px;
+    /* border: 1px solid black; */
 }
 .sideNavLinks a:hover, .logOut:hover{
     border-left: 10px solid #9560F9;
