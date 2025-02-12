@@ -6,6 +6,7 @@ import { IoMdSettings } from "react-icons/io";
 import { TiMessageTyping } from "react-icons/ti";
 import Chart2, {data} from '../Chart2';
 import CurrentLoan from '../CurrentLoan';
+import BankCard from '../BankCard/BankCard';
 
 const Body = () => {
     const totalLoanSum = data.reduce((total, item) => total + item.Opay + item.PalmPay + item.MoniePoint, 0);
@@ -32,6 +33,8 @@ const Body = () => {
             <div className="currentLoan">
                 <h1>Your Current Loan</h1>
                 <CurrentLoan borrowed={100000} remaining={50000}/>
+                <BankCard></BankCard>
+                <button className='changePayment'>Change Payment Method</button>
             </div>
 
             <div className="topLenders">

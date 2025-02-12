@@ -3,28 +3,31 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const CurrentLoan = ({ borrowed, remaining }) => {
-  const [progress, setProgress] = useState(0); // State to track progress
-  const totalProgress = 100 - ((remaining / borrowed) * 100); // Calculate the percentage of the loan paid
+  const [progress, setProgress] = useState(0);
+  const totalProgress = 100 - ((remaining / borrowed) * 100); // Calculate % paid
+  const animationDuration = 1000; // Total animation duration in ms
+  const incrementSpeed = Math.max(animationDuration / totalProgress, 15); // Adaptive speed
 
-  // UseEffect to animate the progress bar when the component mounts
   useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev < totalProgress) {
-          return prev + 1; // Increase progress until it reaches the final value
-        } else {
-          clearInterval(interval); // Stop the animation when it reaches the final value
-          return prev;
-        }
-      });
-    }, 20); // Adjust the speed of animation by changing this value
-
-    return () => clearInterval(interval); // Cleanup the interval on unmount
-  }, [totalProgress]);
+    let interval;
+    if (progress < totalProgress) {
+      interval = setInterval(() => {
+        setProgress((prev) => {
+          if (prev < totalProgress) {
+            return prev + 1;
+          } else {
+            clearInterval(interval);
+            return prev;
+          }
+        });
+      }, incrementSpeed);
+    }
+    return () => clearInterval(interval);
+  }, [totalProgress, progress]);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", border: "1px solid black"}}>
-      <div style={{ width: 200, height: 200, position: "relative" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div className="gradientThing" style={{ width: 150, height: 150, position: "relative" }}>
         {/* Background Blur Effect */}
         <div
           style={{
@@ -35,16 +38,17 @@ const CurrentLoan = ({ borrowed, remaining }) => {
             filter: "blur(10px)",
             borderRadius: "50%",
             zIndex: 0,
+            
           }}
         ></div>
 
         {/* Circular Progress Bar */}
         <CircularProgressbar
-          value={progress} // Current progress value
+          value={progress}
           styles={buildStyles({
             strokeLinecap: "round",
             textSize: "16px",
-            pathTransitionDuration: 2, // Animation duration
+            pathTransitionDuration: animationDuration / 1000, // Smooth transition
             pathColor: `url(#gradient)`,
             textColor: "#9a59ff",
             trailColor: "#e0d3ff",
@@ -65,7 +69,7 @@ const CurrentLoan = ({ borrowed, remaining }) => {
           }}
         >
           <div style={{ fontSize: "18px" }}>${borrowed.toLocaleString()}</div>
-          <div style={{ fontSize: "22px" }}>{Math.round(progress)}%</div> {/* Percentage paid */}
+          <div style={{ fontSize: "22px" }}>{Math.round(progress)}%</div>
         </div>
 
         {/* SVG Gradient Definition */}
