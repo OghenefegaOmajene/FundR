@@ -4,7 +4,7 @@
     width: 85%;
     height: 180vh;
     padding: 10px;
-    background-color: #EAE5FC;
+    background-color: #3700ff;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -154,7 +154,7 @@ nav{
 @media screen and (max-width: 1000px) {
     .body{
         width: 100%;
-        margin-left: -75px;
+        margin-left: -81px;
         /* height: 100%; */
     }
     .activities{
