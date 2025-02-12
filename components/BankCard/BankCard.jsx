@@ -20,12 +20,17 @@ const BankCard = () => {
                     <div className="name-number">
                         <h6>Card Number</h6>
                         <h5 className="number">8050 2030 3020 5040</h5>
-                        <h5 className="name">Daniels Fega</h5>
+                        
                     </div>
 
                     <div className="valid-date">
-                        <h6>Valid Thru</h6>
-                        <h5>05/28</h5>
+                        <h5 className="name">Daniels Fega</h5>
+
+                        <div className="valid">
+                            <h6>Valid Thru</h6>
+                            <h5>05/28</h5>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

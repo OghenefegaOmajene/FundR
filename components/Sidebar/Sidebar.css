@@ -158,10 +158,12 @@
         align-items: center;
         /* height: 90vh; */
     }
-    .sideNavLinks, .logOutBtn{
-        padding: 0;
+    .logOutBtn{
         background-color: #9660f92c;
         backdrop-filter: blur(20px);
+    }
+    .sideNavLinks, .logOutBtn{
+        padding: 0;
         /* border: 1px solid black; */
         width: 50%;
         border-radius: 10px;
