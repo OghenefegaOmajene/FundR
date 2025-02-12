@@ -1,0 +1,22 @@
+.lenders{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.bank{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* border: 2px solid black; */
+}
+
+.bank img{
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid black; */
+}
+.bank p{
+    font-size: 20px;
+}

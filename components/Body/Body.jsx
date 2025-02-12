@@ -7,11 +7,16 @@ import { TiMessageTyping } from "react-icons/ti";
 import Chart2, {data} from '../Chart2';
 import CurrentLoan from '../CurrentLoan';
 import BankCard from '../BankCard/BankCard';
+import Lenders from '../Lenders/Lenders';
+import Calendar from '../Calendar';
 
 const Body = () => {
     const totalLoanSum = data.reduce((total, item) => total + item.Opay + item.PalmPay + item.MoniePoint, 0);
-    const borrowed = 100000; // Example loan amount
-    const remaining = 11000;
+
+    const totalOpay = data.reduce((sum, month) => sum + month.Opay, 0);
+    const totalPalmPay = data.reduce((sum, month) => sum + month.PalmPay, 0);
+    const totalMoniePoint = data.reduce((sum, month) => sum + month.MoniePoint, 0);
+    const totalAccess = data.reduce((sum, month) => sum + month.Access, 0);
   return (
     <div className='body'>
         <nav className='nav'>
@@ -38,11 +43,12 @@ const Body = () => {
             </div>
 
             <div className="topLenders">
-                Top Lenders
+                <h1>Top Lenders</h1>
+                <Lenders totalLoans={{ Opay: totalOpay, PalmPay: totalPalmPay, MoniePoint: totalMoniePoint,Access: totalAccess }} />
             </div>
 
             <div className="calendar">
-                Calendar
+                <Calendar></Calendar>
             </div>
 
             <div className="activities">
