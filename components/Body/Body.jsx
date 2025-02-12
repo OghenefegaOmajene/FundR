@@ -8,15 +8,22 @@ import Chart2, {data} from '../Chart2';
 import CurrentLoan from '../CurrentLoan';
 import BankCard from '../BankCard/BankCard';
 import Lenders from '../Lenders/Lenders';
-import Calendar from '../Calendar';
+import Calendar from '../Calendar/Calendar';
 
 const Body = () => {
     const totalLoanSum = data.reduce((total, item) => total + item.Opay + item.PalmPay + item.MoniePoint, 0);
 
-    const totalOpay = data.reduce((sum, month) => sum + month.Opay, 0);
-    const totalPalmPay = data.reduce((sum, month) => sum + month.PalmPay, 0);
-    const totalMoniePoint = data.reduce((sum, month) => sum + month.MoniePoint, 0);
-    const totalAccess = data.reduce((sum, month) => sum + month.Access, 0);
+    const totalLoans = {
+        Opay: data.reduce((sum, month) => sum + (month.Opay || 0), 0),
+        PalmPay: data.reduce((sum, month) => sum + (month.PalmPay || 0), 0),
+        MoniePoint: data.reduce((sum, month) => sum + (month.MoniePoint || 0), 0),
+        Access: data.reduce((sum, month) => sum + (month.Access || 0), 0),
+    };
+
+    // Convert object to array and sort by loan amount (highest to lowest)
+    const sortedLenders = Object.entries(totalLoans)
+        .map(([name, amount]) => ({ name, amount }))
+        .sort((a, b) => b.amount - a.amount);
   return (
     <div className='body'>
         <nav className='nav'>
@@ -44,12 +51,12 @@ const Body = () => {
 
             <div className="topLenders">
                 <h1>Top Lenders</h1>
-                <Lenders totalLoans={{ Opay: totalOpay, PalmPay: totalPalmPay, MoniePoint: totalMoniePoint,Access: totalAccess }} />
+                <Lenders sortedLenders={sortedLenders} />
             </div>
 
-            <div className="calendar">
+            {/* <div className="calendar"> */}
                 <Calendar></Calendar>
-            </div>
+            {/* </div> */}
 
             <div className="activities">
                 Activities
