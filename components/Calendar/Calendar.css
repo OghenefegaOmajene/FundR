@@ -1,12 +1,11 @@
 .calendar{
-    
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     /* margin: 20px auto; */
     /* border: 1.5px solid #ccc; */
     border-radius: 20px;
     overflow: hidden;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .header{
@@ -54,6 +53,9 @@
 }
 .day{
     border: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -99,3 +101,16 @@
 .nextMonthDay:hover {
     background-color: #e0e0e0;
 } */
+
+@media screen and (max-width: 950px) {
+    .day{
+        width: 12%;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .day{
+        width: 14%;
+        height: 35px;
+    }
+}

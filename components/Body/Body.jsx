@@ -58,7 +58,9 @@ const Body = () => {
             </div>
 
         
-            <Calendar></Calendar>
+            <div className="calendar">
+                <Calendar></Calendar>
+            </div>
 
             <div className="activities">
                 <Activities></Activities>

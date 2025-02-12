@@ -9,7 +9,7 @@ const BankCard = () => {
         <div className="card">
             <div className="card front-face">
                 <header>
-                    <span className="logo">
+                    <span className="masterCard">
                         <img src={mastercard} alt="" />
                         <h5>Master Card</h5>
                     </span>

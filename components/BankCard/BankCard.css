@@ -4,7 +4,7 @@
 .card {
   /* position: relative; */
   height: 150px;
-  width: 250px;
+  width: 80%;
   padding: 10px;
   left: -10px;
   margin-bottom: 50px;
@@ -23,7 +23,7 @@
   height: 100%;
   width: 100%;
   /* padding: 20px; */
-  border-radius: 25px;
+  border-radius: 10px;
   backdrop-filter: blur(25px);
   background: #121321;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
@@ -36,15 +36,17 @@
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
-header,.logo {
+header,.masterCard {
   display: flex;
   align-items: center;
 }
-
-.front-face header {
+header {
   justify-content: space-between;
+  /* border: 1px solid wheat; */
+  height: 30%;
 }
 
 
@@ -55,9 +57,13 @@ h5 {
 
 
 
-.front-face .card-details {
+.card-details {
+  /* border: 2px solid white; */
+  /* height: 30%; */
+  width: 100%;
   display: flex;
-  margin-top: 40px;
+  /* margin-top: 40px; */
+  /* flex-direction: column; */
   align-items: flex-end;
   justify-content: space-between;
 }
@@ -67,12 +73,12 @@ h6 {
   font-weight: 400;
 }
 
-h5.number {
+.number {
   font-size: 18px;
   letter-spacing: 1px;
 }
 
-h5.name {
+.name {
   margin-top: 20px;
 }
 
@@ -81,7 +87,8 @@ h5.name {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  gap: 3%;
   /* padding: 15px 25px 25px 25px; */
   transform: rotateY(180deg);
   backface-visibility: hidden; /* Ensure backface-visibility is set */
@@ -89,22 +96,25 @@ h5.name {
 
 .card.back-face h6 {
   font-size: 8px;
+  /* border: 2px solid white; */
 }
 
 .magnetic-strip {
-  position: absolute;
+  /* position: absolute; */
   top: 40px;
   left: 0;
   height: 45px;
   width: 100%;
   background: #000;
+  /* border: 1px solid coral; */
 }
 .cvv {
+  /* border: 1px solid rgb(255, 80, 80); */
   display: flex;
   justify-content: flex-end;
   /* right: 10px; */
   align-items: center;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   height: 40px;
   width: 85%;
   border-radius: 6px;
@@ -126,14 +136,15 @@ h5.name {
 
 .card.back-face h5 {
   font-size: 8px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
+  /* border: 1px solid rgb(80, 229, 255); */
 }
 
-.logo, .chip{
+.masterCard, .chip{
     /* background-color: white; */
     height: 30px;
 }
-.logo img{
+.masterCard img{
     width: 50%;
     height: 100%;
     width: 40px;
@@ -142,3 +153,63 @@ h5.name {
 .chip {
     width: 40px;
   }
+
+@media screen and (max-width: 1000px) {
+  .card{
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card{
+    height: 120px;
+  }
+  .number{
+    font-size: 14px;
+  }
+  .masterCard img{
+    width: 50%;
+    height: 80%;
+    width: 30px;
+    margin-right: 5px;
+  }
+  .card .back-face{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .card{
+    height: 100px;
+  }
+  .masterCard h5{
+    font-size: 13px;
+  }
+  .number{
+    font-size: 12px;
+  }
+  .front-face{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .card-details{
+    padding-top: 15px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .card{
+    width: 70%;
+    height: 90px;
+  }
+  .number{
+    font-size: 11px;
+  }
+  .name{
+    font-size: 14px;
+  }
+}

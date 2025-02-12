@@ -26,5 +26,6 @@
     .App{
         display: flex;
         align-items: start;
+        /* padding-left: 15%; */
     }
 }

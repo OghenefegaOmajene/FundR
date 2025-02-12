@@ -29,7 +29,7 @@ const Sidebar = () => {
 
       <div className={`sideNav ${isMenuOpen ? 'open' : ''}`}>
 
-        <img src={logo} alt="" />
+        <img src={logo} alt="" className='logo'/>
 
         <div className="sideNavLinks">
           <a href=""> 

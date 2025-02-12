@@ -11,20 +11,23 @@ const Activities = () => {
 
   return (
     <div className="activityBox">
-      <h1>Recent Activities</h1>
+      <div className="activityTxt"> 
+        <h1>Recent Activities</h1>
+      </div>
+      
       <div className="activitiesList">
         {activities.map((activity, index) => (
           <div key={index} className="activityItem">
 
             <div className="iconContainer">{getIcon(activity.action)}</div>
             
-            <div><strong>{activity.action}</strong></div>
+            <div className="action"><strong>{activity.action}</strong></div>
 
-            <div>{activity.name}</div>
+            <div className="name">{activity.name}</div>
 
-            <div>{activity.dateBorrowed}</div>
+            <div className="date">{activity.dateBorrowed}</div>
 
-            <div style={{color: "#9a59ff"}}> <b><i>${activity.amount}</i></b></div>
+            <div className="amount" style={{color: "#9a59ff"}}> <b><i>${activity.amount}</i></b></div>
 
             <div 
               className="status" 

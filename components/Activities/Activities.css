@@ -3,6 +3,8 @@
     /* border: 1px solid black; */
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* .activityBox {
@@ -23,7 +25,8 @@
 .activitiesList {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* justify-content: space-evenly; */
+    /* gap: 10px; */
 }
 
 .activityItem {
@@ -52,4 +55,48 @@
     width: 16%;
     /* border: 1px solid black; */
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 765px) {
+    
+    .activityItem{
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .activityBox{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 610px) {
+    .activityBox{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .activityTxt{
+        position: static;
+        /* border: 1px solid black; */
+    }
+    .activitiesList{
+        overflow-x: scroll;
+        width: 190%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .activitiesList{
+        overflow-x: scroll;
+        width: 210%;
+    }
 }

@@ -65,6 +65,10 @@ nav{
     max-width: 100%; /* Prevent overflow */
     overflow: hidden;
 }
+.currentLoan h1{
+    font-size: 25px;
+}
+
 .topLenders{
     background-color: rgba(255, 255, 255, 0.553);
     backdrop-filter: blur(20px);
@@ -74,6 +78,16 @@ nav{
     flex-direction: column;
     /* justify-content: center; */
     gap: 20px;
+}
+.calendar{
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 .activities{
     margin-top: 10px;
@@ -133,6 +147,114 @@ nav{
 
 @media screen and (max-width: 1200px) {
     .body{
-        height: 100vh;
+        height: 110vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .body{
+        width: 100%;
+        margin-left: -75px;
+        /* height: 100%; */
+    }
+    .activities{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .currentLoan h1{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .currentLoan h1{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .body{
+        height: 150vh;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr; /* 3 columns: First two are equal, third is smaller */
+        grid-template-rows: 1fr 1fr 1fr; /* 3 equal rows */
+        gap: 10px;
+    }
+    .totalLoan{
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+    .currentLoan{
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+    .activities{
+        grid-column: 1 / span 3;
+        grid-row: 4;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .topLenders{
+        grid-column: 2 / span 2;
+        grid-row: 3;
+    }
+    .calendar{
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+    .currentLoan h1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .body{
+        height: 250vh;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr; /* 3 columns: First two are equal, third is smaller */
+        grid-template-rows: 1fr 1fr 1fr; /* 3 equal rows */
+        gap: 10px;
+    }
+    .totalLoan{
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+    .currentLoan{
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+    .activities{
+        grid-column: 1 / span 3;
+        grid-row: 5;
+        /* height: 300px; */
+    }
+    .topLenders{
+        grid-column: 1 / span 3;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .calendar{
+        grid-column: 1 / span 3;
+        grid-row: 4;
+    }
+    .currentLoan h1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .activities{
+        overflow-x: scroll;
+        /* width: 110%; */
     }
 }
