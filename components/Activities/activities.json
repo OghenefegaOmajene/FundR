@@ -1,0 +1,34 @@
+[
+    {
+        "icon": "<GiReceiveMoney />",
+        "action": "Borrowed",
+        "name": "RTX 5090",
+        "dateBorrowed": "11-02-25",
+        "amount": "2,000,000",
+        "status": "In Debt"
+    },
+    {
+        "icon": "<GiTakeMyMoney />",
+        "action": "Paid",
+        "name": "Pizza",
+        "dateBorrowed": "11-02-25",
+        "amount": "5,000",
+        "status": "Cleared"
+    },
+    {
+        "icon": "<GiReceiveMoney />",
+        "action": "Borrowed",
+        "name": "Mclaren 720s",
+        "dateBorrowed": "11-02-25",
+        "amount": "30,000,000",
+        "status": "In Debt"
+    },
+    {
+        "icon": "<GiTakeMyMoney />",
+        "action": "Paid",
+        "name": "Data",
+        "dateBorrowed": "11-02-25",
+        "amount": "1,700",
+        "status": "Cleared"
+    }
+]

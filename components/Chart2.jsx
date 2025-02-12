@@ -7,7 +7,7 @@ export const data = [
     {month: "Dec", Opay: 74650, PalmPay: 17090, MoniePoint: 1100},
     {month: "Jan", Opay: 14050, PalmPay: 1450, MoniePoint: 800},
     {month: "Feb", Opay: 9650, PalmPay: 1300, MoniePoint: 9000},
-  ];
+];
   
 const Chart2 = () => {
   return (

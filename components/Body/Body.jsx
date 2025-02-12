@@ -9,6 +9,7 @@ import CurrentLoan from '../CurrentLoan';
 import BankCard from '../BankCard/BankCard';
 import Lenders from '../Lenders/Lenders';
 import Calendar from '../Calendar/Calendar';
+import Activities from '../Activities/Activities'
 
 const Body = () => {
     const totalLoanSum = data.reduce((total, item) => total + item.Opay + item.PalmPay + item.MoniePoint, 0);
@@ -54,12 +55,11 @@ const Body = () => {
                 <Lenders sortedLenders={sortedLenders} />
             </div>
 
-            {/* <div className="calendar"> */}
-                <Calendar></Calendar>
-            {/* </div> */}
+        
+            <Calendar></Calendar>
 
             <div className="activities">
-                Activities
+                <Activities></Activities>
             </div>
         </div>
 

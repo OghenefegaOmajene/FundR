@@ -85,7 +85,7 @@ const CurrentLoan = ({ borrowed, remaining }) => {
 
       {/* Remaining Amount Outside the Progress Bar */}
       <p style={{ marginTop: "10px", color: "#888", fontSize: "16px" }}>
-        Remaining: <b>${remaining.toLocaleString()}</b>
+        Remaining Debt: <b>${remaining.toLocaleString()}</b>
       </p>
     </div>
   );

@@ -1,9 +1,10 @@
 .calendar{
+    
     width: 100%;
     height: 100%;
     /* margin: 20px auto; */
-    border: 1.5px solid #ccc;
-    border-radius: 10px;
+    /* border: 1.5px solid #ccc; */
+    border-radius: 20px;
     overflow: hidden;
     padding-bottom: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -30,8 +31,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-.dayName, .day, .emptyDay{
+.dayName{
     width: 14.28%;
+}
+.day, .emptyDay{
+    width: 11%;
+}
+.dayName, .day, .emptyDay{
     padding: 10px;
     border: 2px solid #f0f0f0;
     box-sizing: border-box;
@@ -56,7 +62,8 @@
 }
 .emptyDay{
     border: 2px solid #f0f0f0;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.553);
+    backdrop-filter: blur(20px);
 }
 .today{
     background-color: #9a59ff;
@@ -70,3 +77,25 @@
     border-radius: 5px;
     text-align: center;
 }
+
+/* .prevMonthDay, .nextMonthDay {
+    width: 14.28%;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.4; 
+    border-radius: 5px;
+}
+
+
+.nextMonthDay {
+    color: #bbb;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #f0f0f0;
+    cursor: pointer;
+}
+.nextMonthDay:hover {
+    background-color: #e0e0e0;
+} */
