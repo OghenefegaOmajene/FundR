@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const CurrentLoan = ({ borrowed, remaining }) => {
+const CurrentLoan = ({borrowed, remaining }) => {
   const [progress, setProgress] = useState(0);
-  const totalProgress = 100 - ((remaining / borrowed) * 100); // Calculate % paid
+  const totalProgress = borrowed > 0 ? 100 - ((remaining / borrowed) * 100) : 0;
+
+  // const totalProgress = 100 - ((remaining / borrowed) * 100);
   const animationDuration = 1000; // Total animation duration in ms
   const incrementSpeed = Math.max(animationDuration / totalProgress, 15); // Adaptive speed
 
@@ -68,8 +70,8 @@ const CurrentLoan = ({ borrowed, remaining }) => {
             fontWeight: "bold",
           }}
         >
-          <div style={{ fontSize: "18px" }}>${borrowed.toLocaleString()}</div>
-          <div style={{ fontSize: "22px" }}>{Math.round(progress)}%</div>
+          
+          <div style={{ fontSize: "22px" }}>{Math.round(progress)}% complete</div>
         </div>
 
         {/* SVG Gradient Definition */}
