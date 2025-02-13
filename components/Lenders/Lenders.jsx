@@ -18,7 +18,7 @@ const Lenders = ({ sortedLenders }) => {
             {sortedLenders.map(({ name, amount }) => (
                 <div key={name} className="bank">
                     <img src={lenderImages[name]} alt={name} />
-                    <p><b>${amount.toLocaleString()}</b></p>
+                    <p><b>₦{amount.toLocaleString()}</b></p>
                 </div>
             ))}
         </div>

@@ -27,7 +27,7 @@ const Activities = () => {
 
             <div className="date">{activity.dateBorrowed}</div>
 
-            <div className="amount" style={{color: "#9a59ff"}}> <b><i>${activity.amount}</i></b></div>
+            <div className="amount" style={{color: "#9a59ff"}}> <b><i>₦{activity.amount}</i></b></div>
 
             <div 
               className="status" 

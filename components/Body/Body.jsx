@@ -40,14 +40,16 @@ const Body = () => {
 
             <div className="totalLoan">
                 <p>Total Loan (past 5 months)</p>
-                <h3><b>${totalLoanSum.toLocaleString()}</b></h3> {/* Display dynamic total */}
+                <h3><b>₦{totalLoanSum.toLocaleString()}</b></h3> {/* Display dynamic total */}
                 <Chart></Chart>
             </div>
 
             <div className="currentLoan">
-                <h1>Your Current Loan: <span style={{color: "#9a59ff"}}>${borrowedAmount.toLocaleString()}</span></h1>
-                <CurrentLoan borrowed={borrowedAmount} remaining={35723}/>
-
+                <div>
+                    <h1>Your Current Loan: <span style={{color: "#9a59ff"}}>₦{borrowedAmount.toLocaleString()}</span></h1>
+                    <CurrentLoan borrowed={borrowedAmount} remaining={35723}/>
+                </div>
+                
                 <BankCard></BankCard>
                 <button className='changePayment'>Change Payment Method</button>
             </div>
