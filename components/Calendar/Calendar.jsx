@@ -38,7 +38,7 @@ const Calendar = () => {
     };
 
     return (
-        <div className="calendar">
+        <div className="calendarBox">
             <div className="header">
                 <button onClick={prevMonth}> &lt; </button>
                 <span>

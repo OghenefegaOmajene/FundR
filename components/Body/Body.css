@@ -178,9 +178,9 @@ nav{
 }
 
 @media screen and (max-width: 700px) {
-    .body{
+    /* .body{
         height: 150vh;
-    }
+    } */
     .content{
         display: grid;
         grid-template-columns: 2fr 2fr 2fr; /* 3 columns: First two are equal, third is smaller */
@@ -249,6 +249,7 @@ nav{
     .calendar{
         grid-column: 1 / span 3;
         grid-row: 4;
+        height: 300px;
     }
     .currentLoan h1{
         font-size: 17px;
@@ -268,3 +269,9 @@ nav{
         grid-row: 2 / span 2;
     }
 } */
+
+@media screen and (max-height: 921px) {
+    .currentLoan{
+        height: 600px;
+    }
+}
