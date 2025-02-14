@@ -6,7 +6,7 @@ import { FaChartPie } from "react-icons/fa";
 import { FaSackDollar } from "react-icons/fa6";
 import { GiNotebook } from "react-icons/gi";
 import { IoLogOut } from "react-icons/io5";
-import logo from '../../images/logo2.png'
+import logo from '../../images/logo3.png'
 import Loan from '../../pages/Loan/Loan';
 
 const Sidebar = () => {

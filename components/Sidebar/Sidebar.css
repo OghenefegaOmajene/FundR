@@ -5,13 +5,14 @@
     /* background-color: crimson; */
     background-color: rgba(255, 255, 255, 0.553);
     backdrop-filter: blur(20px);
-    /* position: sticky; */
+    position: fixed;
     /* border: 1px solid black; */
     height: 100vh; /* Ensure it takes the full viewport height */
     display: flex;
     flex-direction: column;
     padding-top: 70px;
     gap: 10px;
+    align-items: center;
     /* justify-content: ; */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -22,7 +23,7 @@
     z-index: 10;
 }    
 .logo{
-    width: 100%;
+    width: 80%;
     height: 80px;
     /* border: 1px solid black; */
 }
@@ -67,6 +68,9 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-left: 10px;
+}
+.sideNavLinks a:hover i{
+    color: #9560F9;
 }
 
 
@@ -184,7 +188,7 @@
 
 @media screen and (max-width: 1040px){
     .logo{
-        width: 110%;
+        width: 80%;
         height: 70px;
     }
 }
@@ -224,7 +228,7 @@
         width: 60px;
     }
     .logo{
-        width:90%;
+        width: 70%;
     }
     .sideNavLinks a, .logOutBtn{
         display: flex;
