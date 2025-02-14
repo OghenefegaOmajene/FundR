@@ -33,13 +33,13 @@ const Sidebar = () => {
         <img src={logo} alt="" className='logo'/>
 
         <div className="sideNavLinks">
-          <a href=""> 
+          <a href={Loan}>
             <i><TbLayoutDashboardFilled /></i> 
             <p>Dashboard</p>
           </a>
 
 
-          <a href="">
+          <a href={Loan}>
             <i><FaChartPie /> </i>
             <p>Statistics</p>
           </a>
@@ -50,12 +50,12 @@ const Sidebar = () => {
             <p>Loans</p>  
           </a>
 
-          <a href="">
+          <a href={Loan}>
             <i><FaCalendarAlt /></i> 
             <p>Calendar</p>
           </a>
 
-          <a href="">
+          <a href={Loan}>
             <i><GiNotebook /></i> 
             <p>Activities</p>
           </a>

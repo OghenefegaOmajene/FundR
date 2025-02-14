@@ -228,7 +228,7 @@
         width: 60px;
     }
     .logo{
-        width: 70%;
+        width: 60%;
     }
     .sideNavLinks a, .logOutBtn{
         display: flex;
@@ -236,13 +236,16 @@
         justify-content: start;
         /* border: 1px solid black; */
     }
-    .sideNavLinks a:hover, .logOut:hover{
+    .sideNavLinks a:hover{
         border-left: 10px solid #9560F9;
         color: #9560F9;
         transition: 1s;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         padding-left: 10px;
+    }
+    .logOut:hover{
+        color: #9560F9;
     }
     
     /* .sideNavLinks, .logOutBtn{
