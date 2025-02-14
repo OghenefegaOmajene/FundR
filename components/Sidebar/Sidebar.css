@@ -233,8 +233,8 @@
         /* border: 1px solid black; */
     }
     .sideNavLinks a:hover, .logOut:hover{
-        border-left: 10px solid white;
-        color: white;
+        border-left: 10px solid #9560F9;
+        color: #9560F9;
         transition: 1s;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;

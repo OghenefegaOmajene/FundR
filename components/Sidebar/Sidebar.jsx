@@ -7,6 +7,7 @@ import { FaSackDollar } from "react-icons/fa6";
 import { GiNotebook } from "react-icons/gi";
 import { IoLogOut } from "react-icons/io5";
 import logo from '../../images/logo2.png'
+import Loan from '../../pages/Loan/Loan';
 
 const Sidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +45,7 @@ const Sidebar = () => {
           </a>
 
 
-          <a href="">
+          <a href={Loan}>
             <i><FaSackDollar /></i> 
             <p>Loans</p>  
           </a>
