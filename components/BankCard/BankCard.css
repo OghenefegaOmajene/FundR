@@ -3,10 +3,10 @@
 
 .card {
   /* position: relative; */
-  height: 100px;
+  height: 160px;
   width: 80%;
   padding: 10px;
-  /* left: -10px; */
+  left: -2.5px;
   /* margin-bottom: 50px; */
   /* z-index: 100; */
   color: white;
@@ -19,7 +19,7 @@
 }
 
 .card .card {
-  /* position: absolute; */
+  position: absolute;
   height: 70%;
   width: 95%;
   /* padding: 20px; */
