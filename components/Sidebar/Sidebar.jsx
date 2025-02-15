@@ -8,6 +8,7 @@ import { GiNotebook } from "react-icons/gi";
 import { IoLogOut } from "react-icons/io5";
 import logo from '../../images/logo3.png'
 import Loan from '../../pages/Loan/Loan';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,32 +34,32 @@ const Sidebar = () => {
         <img src={logo} alt="" className='logo'/>
 
         <div className="sideNavLinks">
-          <a href={Loan}>
+          <Link to='/Body'>
             <i><TbLayoutDashboardFilled /></i> 
             <p>Dashboard</p>
-          </a>
+          </Link>
 
 
-          <a href={Loan}>
+          <Link to=''>
             <i><FaChartPie /> </i>
             <p>Statistics</p>
-          </a>
+          </Link>
 
 
-          <a href={Loan}>
+          <Link to='/Loan'>
             <i><FaSackDollar /></i> 
             <p>Loans</p>  
-          </a>
+          </Link>
 
-          <a href={Loan}>
+          <Link to=''>
             <i><FaCalendarAlt /></i> 
             <p>Calendar</p>
-          </a>
+          </Link>
 
-          <a href={Loan}>
+          <Link to=''>
             <i><GiNotebook /></i> 
             <p>Activities</p>
-          </a>
+          </Link>
         </div>
           
         <div className="logOutBtn">

@@ -1,5 +1,11 @@
 .loan{
-    background-color: aquamarine;
-    height: 100%;
-    width: 100vh;
+    width: 85%;
+    height: 180vh;
+    padding: 10px;
+    background-color: #EAE5FC;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 190px;
+    font-family: "Patrick Hand", serif;
 }

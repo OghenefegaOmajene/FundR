@@ -159,8 +159,9 @@ nav{
 @media screen and (max-width: 1000px) {
     .body{
         width: 100%;
-        margin-left: -81px;
+        margin-left: -39px;
         height: 100%;
+        /* left: 0; */
     }
     .activities{
         height: 350px;

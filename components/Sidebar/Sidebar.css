@@ -200,9 +200,10 @@
     }
     .toggle{
         display: flex;
+        position: fixed;
     }
     .sideNav{
-        position: absolute;
+        /* position: absolute; */
         height: 100vh;
         width: 200px;
         top: 0px;
@@ -245,7 +246,11 @@
         padding-left: 10px;
     }
     .logOut:hover{
+        border: none;
+    }
+    .logOut:hover i{
         color: #9560F9;
+        border: none;
     }
     
     /* .sideNavLinks, .logOutBtn{
