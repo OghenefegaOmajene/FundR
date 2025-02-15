@@ -5,6 +5,7 @@
     background-color: #EAE5FC;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     margin-left: 190px;
     font-family: "Patrick Hand", serif;

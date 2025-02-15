@@ -1,0 +1,164 @@
+.loanFormBox{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 90%;
+    border: 3px solid black;
+    /* border-radius: 20px; */
+}
+.form {
+    /* margin-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 40px 20px 0 20px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+.personalDetails{
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+}
+.residentialDetails{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 150px;
+    /* padding-right: 10px; */
+}
+.contactDetails{
+    background-color: palegreen;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+}
+.fields{
+    width: 100%;
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10%; */
+}
+.fields2{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr; /* 3 columns: First two are equal, third is smaller */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 equal rows */
+    /* border: 2px solid black; */
+    gap: 20px;
+    /* padding-right: 50px; */
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+
+.fields3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+
+#firstName, #lastName, #email, #phoneNo{
+    width: 100%;
+    height: 100%;
+}
+/* From Uiverse.io by Yaya12085 */ 
+
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  
+  .group {
+    /* background-color: #3366cc; */
+    position: relative;
+  }
+  
+  .group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+  
+  .form .group input,
+  .form .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* margin-bottom: 20px; */
+    outline: 0;
+    width: 90%;
+    background-color: transparent;
+  }
+  
+  .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .form .group input:focus,
+  .form .group textarea:focus {
+    border-color: #9a59ff;
+  }
+  
+  .form .group input:focus+ label, .form .group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #9a59ff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .form .group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form button {
+    background-color: #9a59ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+    /* right: 0; */
+  }
+  
+  .form button:hover {
+    background-color: #27408b;
+  }
+  
+  
