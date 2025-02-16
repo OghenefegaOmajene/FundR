@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+
+.verticalStep {
+  width: 20%;
+  /* background-color: #9560F9; */
+  height: 100%;
+  font-family: "Lato";
+  padding-left: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* padding-top: 100px; */
+}
+
+.aTj7eBxuaoFY1kwq3ZIA{
+    /* #28a745 */
+    background-color: #9a59ff !important;
+    animation: pulsate 2s infinite;
+}
+
+.YQZiU8D8fXz6FUlYYoMx{ 
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+}
+
+.descriptionContainer {
+    height: 80px !important;
+}
+
+.verticalStepper .activeConnector {
+    background-color: #9a59ff !important;
+    
+}
+
+.verticalStepper .middleStepConnector {
+    height: 80px !important;
+    width: 4px !important;
+}
+
+.completed {
+    background-color: #9a59ff !important; /* Green tick effect */
+    color: white !important;
+    border-radius: 50%;
+    position: relative;
+    
+}
+  
+.completed::after {
+    content: "✔";  /* Checkmark symbol */
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes pulsate {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 5px #9a59ff;
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #9a59ff;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 5px #9a59ff;
+    }
+}
+
+
+
+.verticalStepper .stepConnector {
+    display: none !important;
+}  
+
+@media screen and (max-width: 1000px) {
+    .verticalStep{
+        /* background-color: bisque; */
+        width: 90%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        /* border: 3px solid black; */
+    }
+}
+@media screen and (max-width: 775px) {
+    .verticalStep{
+        /* background-color: bisque; */
+        width: 90%;
+        height: 20%;
+    }
+}
+@media screen and (max-width: 730px) {
+    .verticalStep{
+        /* background-color: bisque; */
+        width: 90%;
+        height: 15%;
+    }
+}

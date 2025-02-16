@@ -25,7 +25,7 @@ const DashBoard = () => {
         .map(([name, amount]) => ({ name, amount }))
         .sort((a, b) => b.amount - a.amount);
   return (
-    <div className='body'>
+    <div className='dashboard'>
 
         <MiniNav></MiniNav>
         <div className="content">

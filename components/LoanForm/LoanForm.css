@@ -1,10 +1,15 @@
 .loanFormBox{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  /* gap: 50px; */
+  align-items: center;
+    /* flex-direction: column; */
     justify-content: space-between;
-    margin-top: 50px;
+    /* margin-top: 30px; */
     height: 600px;
     width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
     /* border: 3px solid black; */
     /* border-radius: 20px; */
 }
@@ -15,15 +20,14 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    height: 94%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.267);
+    height: 90%;
+    width: 80%;
     /* padding: 30px; */
     /* padding-right: 30px; */
     /* padding: 20px 20px 0 20px; */
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 .personalInfo{
   /* border: 3px solid crimson; */
@@ -201,4 +205,83 @@
   
 
   
+  @media screen and (max-width: 1000px) {
+    .loanFormBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: 70%;
+    }
+    .form{
+      height: 75%;
+      border-radius: 20px;
+      /* background-color: plum; */
+    }
+    .fields, .fields3{
+      gap: 20px;
+    }
+   
+}
   
+@media screen and (max-width: 775px) {
+  .loanFormBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 80%;
+  }
+  .form{
+    height: 80%;
+    border-radius: 20px;
+  }
+  .fields, .fields3{
+    display: flex;
+    flex-direction: column;
+  }
+  .fields2{
+    display: grid;
+    grid-template-columns: 2fr 2fr ; /* 3 columns: First two are equal, third is smaller */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 equal rows */
+    gap: 20px;
+    height: 200px;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+  }
+  .fields3{
+    /* gap: 20px; */
+    /* border: 2px solid black; */
+    height: 100px;
+    padding-top: 20px;
+    
+  }
+  .personalInfo{
+    gap: 20px;
+  }
+  
+}
+
+
+@media screen and (max-width: 730px) {
+  .loanFormBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 90%;
+  }
+  .form{
+    height: 85%;
+  }
+  .fields2{
+    display: grid;
+    grid-template-columns: 2fr; /* 3 columns: First two are equal, third is smaller */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 equal rows */
+    height: 300px;
+
+  }
+  .personalInfo{
+    gap: 30px;
+  }
+  .contactDetails{
+    margin-top: 30px;
+  }
+}
