@@ -34,7 +34,7 @@ const Sidebar = () => {
         <img src={logo} alt="" className='logo'/>
 
         <div className="sideNavLinks">
-          <Link to='/Body'>
+          <Link to='/DashBoard'>
             <i><TbLayoutDashboardFilled /></i> 
             <p>Dashboard</p>
           </Link>

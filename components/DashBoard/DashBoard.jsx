@@ -1,17 +1,14 @@
 import React from 'react'
-import './Body.css'
-import avatar from '../../images/avatar.jpg'
-import { IoNotificationsSharp } from "react-icons/io5";
-import { IoMdSettings } from "react-icons/io";
-import { TiMessageTyping } from "react-icons/ti";
+import './DashBoard.css'
 import Chart, {data} from '../Chart';
+import MiniNav from '../MinNav/MiniNav';
 import CurrentLoan from '../CurrentLoan';
 import BankCard from '../BankCard/BankCard';
 import Lenders from '../Lenders/Lenders';
 import Calendar from '../Calendar/Calendar';
 import Activities from '../Activities/Activities'
 
-const Body = () => {
+const DashBoard = () => {
     const borrowedAmount = 96550;
 
     const totalLoanSum = data.reduce((total, item) => total + item.Opay + item.PalmPay + item.MoniePoint, 0);
@@ -29,13 +26,8 @@ const Body = () => {
         .sort((a, b) => b.amount - a.amount);
   return (
     <div className='body'>
-        <nav className='nav'>
-            <i><IoNotificationsSharp /></i>
-            <i><TiMessageTyping /></i>
-            <i><IoMdSettings/></i>
-            <img src={avatar} alt="" className='avatar'/>
-        </nav>
 
+        <MiniNav></MiniNav>
         <div className="content">
 
             <div className="totalLoan">
@@ -73,4 +65,4 @@ const Body = () => {
   )
 }
 
-export default Body
+export default DashBoard

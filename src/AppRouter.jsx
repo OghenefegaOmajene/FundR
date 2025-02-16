@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import { useState } from "react";
 import Loan from "../pages/Loan/Loan";
-import Body from "../components/Body/Body";
 import Sidebar from "../components/Sidebar/Sidebar";
+import DashBoard from "../components/DashBoard/DashBoard";
 
 const AppRouter = () => {
   
@@ -10,8 +10,8 @@ const AppRouter = () => {
     <Router>
       <Sidebar  />
       <Routes>
-        <Route path="/" element={<Navigate to="/Body" />} />
-        <Route path="/Body" index element={<Body/>} />
+        <Route path="/" element={<Navigate to="/DashBoard" />} />
+        <Route path="/DashBoard" index element={<DashBoard/>} />
         <Route path="/Loan" element={<Loan />} />
       </Routes>
     </Router>

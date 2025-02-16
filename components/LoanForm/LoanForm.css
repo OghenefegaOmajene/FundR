@@ -1,9 +1,11 @@
 .loanFormBox{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    height: 500px;
+    margin-top: 50px;
+    height: 600px;
     width: 90%;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     /* border-radius: 20px; */
 }
 .form {
@@ -12,41 +14,55 @@
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+    align-items: center;
     background-color: white;
-    height: 100%;
-    width: 70%;
+    height: 94%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    /* padding: 40px 20px 0 20px; */
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    /* padding: 30px; */
+    /* padding-right: 30px; */
+    /* padding: 20px 20px 0 20px; */
+    border-radius: 20px;
   }
+.personalInfo{
+  /* border: 3px solid crimson; */
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .personalDetails{
-    background-color: plum;
+    /* background-color: plum; */
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-    width: 100%;
-    height: 100px;
+    width: 90%;
+    /* height: 100px; */
+    height: 25%;
 }
 .residentialDetails{
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
-    height: 150px;
+    width: 90%;
+    /* height: 160px; */
+    height: 35%;
     /* padding-right: 10px; */
 }
 .contactDetails{
-    background-color: palegreen;
+    /* background-color: palegreen; */
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-    width: 100%;
-    height: 100px;
+    width: 90%;
+    /* height: 100px; */
+    height: 25%;
 }
 .fields{
     width: 100%;
@@ -80,46 +96,85 @@
 }
 
 
-#firstName, #lastName, #email, #phoneNo{
+#firstName, #lastName, #email{
     width: 100%;
     height: 100%;
+   
+}
+#phoneNo{
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+}
+.phoneInput{
+    background-color: transparent;
 }
 /* From Uiverse.io by Yaya12085 */ 
 
+.Buttons{
+  /* border: 2px solid crimson; */
+  width: 100%;
+  height: 15%;
+  /* height: 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+  .Buttons button {
+    background-color: #9a59ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+    /* right: 0; */
+  }
+  
+  .Buttons button:hover {
+    border: 1px solid #9a59ff;
+    transition: 0.8s;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: #9a59ff;
+  }
   
   .title {
     font-size: 24px;
     font-weight: 600;
     text-align: center;
   }
-  
-  
-  .group {
+
+  .group, .phoneGroup {
     /* background-color: #3366cc; */
     position: relative;
+    /* background-color: transparent; */
   }
   
-  .group label {
+  .group label, .phoneGroup label {
     font-size: 14px;
     color: rgb(99, 102, 102);
     position: absolute;
     top: -10px;
     left: 10px;
-    background-color: #fff;
+    /* width: 90%; */
+    /* background-color: #fff; */
     transition: all .3s ease;
   }
   
-  .form .group input,
-  .form .group textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    /* margin-bottom: 20px; */
-    outline: 0;
-    width: 90%;
-    background-color: transparent;
-  }
-  
+.group input, .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* margin-bottom: 20px; */
+  outline: 0;
+  width: 90%;
+  /* height: 30px; */
+  /* background-color: palegoldenrod; */
+}
+
   .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
     top: 10px;
     background-color: transparent;
@@ -139,26 +194,11 @@
     font-size: 14px;
   }
   
-  .form .group textarea {
+  .group textarea {
     resize: none;
     height: 100px;
   }
   
-  .form button {
-    background-color: #9a59ff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 200px;
-    /* right: 0; */
-  }
-  
-  .form button:hover {
-    background-color: #27408b;
-  }
+
   
   
