@@ -46,7 +46,7 @@ const Sidebar = () => {
           </Link>
 
 
-          <Link to='/Loan'>
+          <Link to='/DashBoard/Loan'>
             <i><FaSackDollar /></i> 
             <p>Loans</p>  
           </Link>

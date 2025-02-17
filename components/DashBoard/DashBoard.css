@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 .dashboard{
     width: 85%;
-    height: 180vh;
+    height: 230vh;
     padding: 10px;
     background-color: #EAE5FC;
     display: flex;
@@ -26,12 +26,18 @@
     grid-template-rows: 1fr 1fr 1fr; /* 3 equal rows */
     gap: 10px; /* Adds spacing between grid items */
 }
+.overview{
+    width: 100%;
+   /* border: 1px solid black; */
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
 .totalLoan{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     grid-column: 1 / span 2;
-    grid-row: 1;
+    grid-row: 2;
     border-radius: 20px;
     /* border: 2px solid black; */
     background-color: rgba(255, 255, 255, 0.553);
@@ -42,7 +48,7 @@
     background-color: rgba(255, 255, 255, 0.553);
     backdrop-filter: blur(20px);
     grid-column: 3;
-    grid-row: 1 / span 2;
+    grid-row: 2 / span 2;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -75,7 +81,7 @@
     display: flex;
     flex-direction: column;
     grid-column: 2 / span 1;
-    grid-row: 2;
+    grid-row: 3;
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -85,7 +91,7 @@
     backdrop-filter: blur(20px);
     border-radius: 20px;
     grid-column: 1 / span 3;
-    grid-row: 3;
+    grid-row: 4;
     border-radius: 20px;
     height: 350px;
 }

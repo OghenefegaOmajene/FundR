@@ -6,9 +6,9 @@ import access from '../../images/access.png';
 import './Lenders.css';
 
 const lenderImages = {
-    Opay: opay,
-    PalmPay: palmpay,
-    MoniePoint: moniepoint,
+    Personal: opay,
+    Student: palmpay,
+    Business: moniepoint,
     Access: access,
 };
 

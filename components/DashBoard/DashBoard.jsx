@@ -7,17 +7,18 @@ import BankCard from '../BankCard/BankCard';
 import Lenders from '../Lenders/Lenders';
 import Calendar from '../Calendar/Calendar';
 import Activities from '../Activities/Activities'
+import Overview from '../Overview/Overview';
 
 const DashBoard = () => {
     const borrowedAmount = 96550;
 
-    const totalLoanSum = data.reduce((total, item) => total + item.Opay + item.PalmPay + item.MoniePoint, 0);
+    const totalLoanSum = data.reduce((total, item) => total + item.Personal + item.Student + item.Business, 0);
 
     const totalLoans = {
-        Opay: data.reduce((sum, month) => sum + (month.Opay || 0), 0),
-        PalmPay: data.reduce((sum, month) => sum + (month.PalmPay || 0), 0),
-        MoniePoint: data.reduce((sum, month) => sum + (month.MoniePoint || 0), 0),
-        Access: data.reduce((sum, month) => sum + (month.Access || 0), 0),
+        Personal: data.reduce((sum, month) => sum + (month.Personal || 0), 0),
+        Student: data.reduce((sum, month) => sum + (month.Student || 0), 0),
+        Business: data.reduce((sum, month) => sum + (month.Business || 0), 0),
+        // Access: data.reduce((sum, month) => sum + (month.Access || 0), 0),
     };
 
     // Convert object to array and sort by loan amount (highest to lowest)
@@ -29,6 +30,9 @@ const DashBoard = () => {
 
         <MiniNav></MiniNav>
         <div className="content">
+            <div className="overview">
+                <Overview></Overview>
+            </div>
 
             <div className="totalLoan">
                 <p>Total Loan (past 5 months)</p>
@@ -43,12 +47,12 @@ const DashBoard = () => {
                 </div>
                 
                 <BankCard></BankCard>
-                <button className='changePayment'>Change Payment Method</button>
+                <button className='changePayment'>See More</button>
             </div>
 
             <div className="topLenders">
-                <h1>Top Lenders</h1>
-                <Lenders sortedLenders={sortedLenders} />
+                <h1>Hot Loan Deals</h1>
+                {/* <Lenders /> */}
             </div>
 
         
