@@ -7,7 +7,7 @@ import { TiMessageTyping } from "react-icons/ti";
 
 const MiniNav = () => {
   return (
-    <nav className='nav'>
+    <nav className='miniNav'>
         <i><IoNotificationsSharp /></i>
         <i><TiMessageTyping /></i>
         <i><IoMdSettings/></i>

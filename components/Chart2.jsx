@@ -1,6 +1,6 @@
-import React from 'react';
-import { PieChart, Pie, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { data } from './Chart'; // Import the loan data
+import React from "react";
+import { PieChart, Pie, Tooltip, ResponsiveContainer, Cell } from "recharts";
+import { data } from "./Chart"; // Import the loan data
 
 const colors = ["#ff8080", "#9560F9", "#006fca"];
 
@@ -14,22 +14,67 @@ const totalLoans = totalPersonal + totalStudent + totalBusiness;
 
 // Compute percentages and format values
 export const data2 = [
-  { name: "Personal", value: totalPersonal, percentage: (totalPersonal / totalLoans) * 100 },
-  { name: "Student", value: totalStudent, percentage: (totalStudent / totalLoans) * 100 },
-  { name: "Business", value: totalBusiness, percentage: (totalBusiness / totalLoans) * 100 },
+  {
+    name: "Personal Loans",
+    value: totalPersonal,
+    percentage: (totalPersonal / totalLoans) * 100,
+  },
+  {
+    name: "Student Loans",
+    value: totalStudent,
+    percentage: (totalStudent / totalLoans) * 100,
+  },
+  {
+    name: "Business Loans",
+    value: totalBusiness,
+    percentage: (totalBusiness / totalLoans) * 100,
+  },
 ];
+
+// Custom Label Function for PieChart
+const customizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+  const RADIAN = Math.PI / 180;
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.5; // Fix radius calculation
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  return (
+    <text
+      x={x}
+      y={y}
+      fill="black"
+      fontSize={14}
+      fontWeight="bold"
+      textAnchor="middle"
+      dominantBaseline="middle"
+    >
+      {`${(percent * 100).toFixed(2)}%`}
+    </text>
+  );
+};
 
 const Chart2 = () => {
   return (
-    <div style={{ width: '100%', height: 300 }}>
-      <ResponsiveContainer width="100%" height="100%">
+    
+    <div 
+      style={{ 
+        width: "100%", 
+        height: "100%", 
+        display: "flex", 
+        flexDirection: "column",
+        justifyContent: "space-evenly",
+        alignItems: "center"
+      }}
+    >
+      <h2>Loan Allocation by Category (in %)</h2>
+      <ResponsiveContainer width="100%" height="70%">
         <PieChart>
           <Pie
             data={data2}
             dataKey="value"
-            label={({ name, value, percent }) =>
-              `${name}: ₦${value.toLocaleString()} (${(percent * 100).toFixed(2)}%)`
-            }
+            label={customizedLabel} // Ensures percentages stay inside the pie
+            labelLine={false} // Removes external label lines
+            outerRadius={100} // Adjust size of the pie
           >
             {data2.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={colors[index]} />

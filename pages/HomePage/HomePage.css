@@ -1,7 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 .homePage{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "Exo 2", serif;
+}
+.home{
+    /* background-image: url('../../images/YapCards.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.514); */
+    /* background: linear-gradient(to right, #E4A7F0, #A08CFF, #6B7BFF); */
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.homeTxt{
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.homeImg{
+    /* border: 1px solid black; */
+    height: 80%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phone, .wallet{
+    width: 50%;
+    height: 100%;
+}
+.wallet{
+    /* background-color: plum; */
+    margin-top: 100px;
+    margin-left: -130px;
+    z-index: 10;
 }

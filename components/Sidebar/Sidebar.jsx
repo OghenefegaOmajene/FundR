@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Sidebar.css'
 import { TbLayoutDashboardFilled } from "react-icons/tb";
-import { FaCalendarAlt } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { FaChartPie } from "react-icons/fa";
 import { FaSackDollar } from "react-icons/fa6";
 import { GiNotebook } from "react-icons/gi";
@@ -38,7 +38,11 @@ const Sidebar = () => {
             <i><TbLayoutDashboardFilled /></i> 
             <p>Dashboard</p>
           </Link>
-
+          
+          <Link to='/'>
+            <i><FaHome /></i> 
+            <p>Home</p>
+          </Link>
 
           <Link to=''>
             <i><FaChartPie /> </i>
@@ -49,11 +53,6 @@ const Sidebar = () => {
           <Link to='/DashBoard/Loan'>
             <i><FaSackDollar /></i> 
             <p>Loans</p>  
-          </Link>
-
-          <Link to=''>
-            <i><FaCalendarAlt /></i> 
-            <p>Calendar</p>
           </Link>
 
           <Link to=''>

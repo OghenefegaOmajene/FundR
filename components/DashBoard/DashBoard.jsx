@@ -5,7 +5,7 @@ import Chart2 from '../Chart2';
 import MiniNav from '../MinNav/MiniNav';
 import CurrentLoan from '../CurrentLoan';
 import BankCard from '../BankCard/BankCard';
-import Calendar from '../Calendar/Calendar';
+// import Calendar from '../Calendar/Calendar';
 import Activities from '../Activities/Activities'
 import Overview from '../Overview/Overview';
 import { FaApplePay } from "react-icons/fa";
@@ -74,9 +74,8 @@ const DashBoard = () => {
             </div>
 
         
-            <div className="calendar">
+            <div className="piechart">
                 <Chart2></Chart2>
-                {/* <Calendar></Calendar> */}
             </div>
 
             <div className="activities">

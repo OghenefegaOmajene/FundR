@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
 .dashboard{
     width: 85%;
-    height: 230vh;
+    height: 240vh;
     padding: 10px;
     background-color: #EAE5FC;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-left: 190px;
-    font-family: "Patrick Hand", serif;
+    font-family: "Exo 2", serif;
+    /* font-family: "Patrick Hand", serif; */
     /* position: fixed; */
     /* overflow-y: scroll; */
     /* font-family: "MuseoModerno", serif; */
@@ -92,15 +96,20 @@
     /* justify-content: center; */
     gap: 20px;
 }
-.calendar{
+.piechart{
     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
     width: 100%;
     display: flex;
     flex-direction: column;
     grid-column: 2 / span 1;
     grid-row: 3;
-    /* align-items: center; */
-    /* justify-content: center; */
+    background-color: rgba(255, 255, 255, 0.553);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    align-items: center;
+    height: 300px;
+    justify-content: center;
 }
 .activities{
     margin-top: 10px;
