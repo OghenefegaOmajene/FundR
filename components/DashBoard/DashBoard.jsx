@@ -1,13 +1,16 @@
 import React from 'react'
 import './DashBoard.css'
 import Chart, {data} from '../Chart';
+import Chart2 from '../Chart2';
 import MiniNav from '../MinNav/MiniNav';
 import CurrentLoan from '../CurrentLoan';
 import BankCard from '../BankCard/BankCard';
-import Lenders from '../Lenders/Lenders';
 import Calendar from '../Calendar/Calendar';
 import Activities from '../Activities/Activities'
 import Overview from '../Overview/Overview';
+import { FaApplePay } from "react-icons/fa";
+import { FaPaypal } from "react-icons/fa";
+import { FaAmazonPay } from "react-icons/fa";
 
 const DashBoard = () => {
     const borrowedAmount = 96550;
@@ -47,6 +50,21 @@ const DashBoard = () => {
                 </div>
                 
                 <BankCard></BankCard>
+                    <p className='paymentOption'>
+                        ApplePay
+                        <i className='paymentIcon'><FaApplePay /></i>
+                    </p>
+                 
+                    <p className='paymentOption'>
+                        PayPal
+                        <i className='paymentIcon'><FaPaypal /></i>
+                    </p>
+
+                    <p className='paymentOption'>
+                        Amazon Pay
+                        <i className='paymentIcon'><FaAmazonPay /></i>
+                    </p>
+                 
                 <button className='changePayment'>See More</button>
             </div>
 
@@ -57,7 +75,8 @@ const DashBoard = () => {
 
         
             <div className="calendar">
-                <Calendar></Calendar>
+                <Chart2></Chart2>
+                {/* <Calendar></Calendar> */}
             </div>
 
             <div className="activities">

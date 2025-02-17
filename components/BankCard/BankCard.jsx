@@ -19,7 +19,7 @@ const BankCard = () => {
                 <div className="card-details">
                     <div className="name-number">
                         <h6>Card Number</h6>
-                        <h5 className="number">8050 2030 3020 5040</h5>
+                        <h5 className="number">805* **** **** 5040</h5>
                         
                     </div>
 
