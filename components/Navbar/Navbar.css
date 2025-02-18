@@ -43,40 +43,41 @@
     font-size: 20px;
     text-decoration: none;
 }
-.signUp{
+
+.logIn{
     background-color: #9a59ff;
     border: 0;
     padding: 15px;
     border-radius: 10px;
-    
+    width: 50%;
 }
 .signUp a, .logIn a{
     text-decoration: none;
 }
-.signUp a{
+.logIn a{
     color: white;
 }
-.logIn{
+/* .logIn{
     background-color: transparent;
     color: #9a59ff;
     border: 1px solid #9a59ff;
     padding: 15px;
     border-radius: 10px;
-}
-.signUp:hover{
+} */
+.logIn:hover{
     letter-spacing: 2px;
     transition: 1s;
     background-color: transparent;
     border: 1px solid #9a59ff;
 }
-.signUp:hover a{
+.logIn:hover a{
     color: #9a59ff;
 }
-.logIn:hover a{
+/* .logIn:hover a{
     color: white;
 }
 .logIn:hover{
     letter-spacing: 2px;
     transition: 1s;
     background-color: #9a59ff;
-}
+} */

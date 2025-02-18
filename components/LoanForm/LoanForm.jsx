@@ -150,7 +150,7 @@ const LoanForm = () => {
 
             {step === 1 && (
                     <div className="paymentDetails">
-                        <span className="title">Your Residential Address</span>
+                        <span className="title">Your Card Details</span>
                         <div className="fields">
                             <div className="group">
                                 <CountrySelect 
@@ -184,34 +184,12 @@ const LoanForm = () => {
 
 
             {step === 2 && (
-                    <div className="paymentDetails">
+                    <div className="summaryDetails">
                         <span className="title">Summary</span>
-                        <div className="fields">
-                            <div className="group">
-                                <CountrySelect 
-                                    onChange={(e) => setcountryid(e.id)}
-                                    placeHolder="Select Country"
-                                />
-                            </div>
-                            <div className="group">
-                                <StateSelect 
-                                    disabled={!countryid}
-                                    countryid={countryid}
-                                    onChange={(e) => setstateid(e.id)}
-                                    placeHolder="Select State"
-                                />
-                            </div>
-                            <div className="group">
-                                <CitySelect 
-                                    disabled={!stateid}
-                                    countryid={countryid}
-                                    stateid={stateid}
-                                    placeHolder="Select City"
-                                />
-                            </div>
-                            <div className="group">
-                                <input type="text" required />
-                                <label>Street Address</label>
+                        <div className="summaryField">
+                            <div className="summaryGroup group" id='summary'>
+                                <input placeholder="" type="text" required=""/>
+                                <label htmlFor="name">Summary</label>
                             </div>
                         </div>
                     </div>

@@ -205,7 +205,7 @@ h6 {
   }
 }
 
-@media screen and (max-width: 730px) {
+/* @media screen and (max-width: 730px) {
   .card{
     height: 170px;
     width: 80%;
@@ -235,9 +235,9 @@ h6 {
   .name{
     font-size: 14px;
   }
-}
+} */
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 800px) {
   .card{
     width: 50%;
     height: 170px;

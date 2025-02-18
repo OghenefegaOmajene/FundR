@@ -1,0 +1,47 @@
+.deals{
+    width: 100%;
+    height: 100%;
+    /* background-color: palegoldenrod; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hotDeals{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /* background-color: palevioletred; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hotDeals i{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #9a59ff;
+}
+.hotDeals i:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #9a59ff;
+    border: 1px solid #9a59ff;
+    transform: scale(1.1);
+}
+
+@media  screen and (max-width: 940px) {
+    .hotDeals{
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media  screen and (max-width: 800px) {
+    .hotDeals{
+        /* border: 1px solid black; */
+        display: flex;
+        height: 60px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+}

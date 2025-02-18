@@ -63,10 +63,11 @@ const Chart2 = () => {
         display: "flex", 
         flexDirection: "column",
         justifyContent: "space-evenly",
-        alignItems: "center"
+        alignItems: "center",
+        textAlign: "center"
       }}
     >
-      <h2>Loan Allocation by Category (in %)</h2>
+      <h3>Loan Allocation by Category (in %)</h3>
       <ResponsiveContainer width="100%" height="70%">
         <PieChart>
           <Pie

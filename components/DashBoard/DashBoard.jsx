@@ -5,7 +5,7 @@ import Chart2 from '../Chart2';
 import MiniNav from '../MinNav/MiniNav';
 import CurrentLoan from '../CurrentLoan';
 import BankCard from '../BankCard/BankCard';
-// import Calendar from '../Calendar/Calendar';
+import LoanDeals from '../LoanDeals/LoanDeals';
 import Activities from '../Activities/Activities'
 import Overview from '../Overview/Overview';
 import { FaApplePay } from "react-icons/fa";
@@ -45,7 +45,7 @@ const DashBoard = () => {
 
             <div className="currentLoan">
                 <div>
-                    <h1>Your Current Loan: <span style={{color: "#9a59ff"}}>₦{borrowedAmount.toLocaleString()}</span></h1>
+                    <h3>Your Current Loan: <span style={{color: "#9a59ff"}}>₦{borrowedAmount.toLocaleString()}</span></h3>
                     <CurrentLoan borrowed={borrowedAmount} remaining={35723}/>
                 </div>
                 
@@ -68,9 +68,9 @@ const DashBoard = () => {
                 <button className='changePayment'>See More</button>
             </div>
 
-            <div className="topLenders">
-                <h1>Hot Loan Deals</h1>
-                {/* <Lenders /> */}
+            <div className="hotLoanDeals">
+                <h3>Hot Loan Deals</h3>
+                <LoanDeals></LoanDeals>
             </div>
 
         

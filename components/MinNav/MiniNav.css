@@ -14,7 +14,7 @@
     height: 100%;
     border-radius: 50px;
 }
-.nav i:hover {
+.miniNav i:hover {
     animation: shakeScale 0.82s cubic-bezier(.36,.07,.19,.97) both;
     backface-visibility: hidden;
     perspective: 1000px;

@@ -30,13 +30,22 @@
     border-bottom-right-radius: 20px;
   }
 .personalInfo{
-  /* border: 3px solid crimson; */
+  border: 3px solid crimson;
   width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+.summaryDetails{
+  /* border: 3px solid crimson; */
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
 }
 .personalDetails{
     /* background-color: plum; */
@@ -68,6 +77,16 @@
     /* height: 100px; */
     height: 25%;
 }
+.paymentDetails{
+  border: 3px solid crimson;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .fields{
     width: 100%;
     display: flex;
@@ -89,8 +108,6 @@
     justify-content: space-between;
     /* align-items: center; */
 }
-
-
 .fields3{
     width: 100%;
     display: flex;
@@ -98,12 +115,26 @@
     justify-content: space-between;
     /* border: 2px solid black; */
 }
+.summaryField{
+  width: 100%;
+  /* height: 400px; */
+  padding-top: 10px;
+  display: flex;
+  /* border: 2px solid black; */
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 10%; */
+}
 
 
 #firstName, #lastName, #email{
     width: 100%;
     height: 100%;
    
+}
+#summary{
+  width: 100%;
+  height: 400px;
 }
 #phoneNo{
     width: 100%;
@@ -175,6 +206,17 @@
   /* margin-bottom: 20px; */
   outline: 0;
   width: 90%;
+  /* height: 30px; */
+  /* background-color: palegoldenrod; */
+}
+
+.summaryGroup input, .summaryGroup textarea {
+  padding: 50px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* margin-top: 20px; */
+  outline: 0;
+  width: 84%;
   /* height: 30px; */
   /* background-color: palegoldenrod; */
 }

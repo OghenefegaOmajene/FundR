@@ -26,12 +26,12 @@ const Navbar = () => {
         </nav>
 
         <div className="navBtn">
-          <button className='signUp'>
-            <Link to='/DashBoard'>Sign Up</Link>  
-          </button>
           <button className='logIn'>
-            <Link to='/DashBoard'>Log In</Link>  
+            <Link to='/DashBoard'>Login</Link>  
           </button>
+          {/* <button className='logIn'>
+            <Link to='/DashBoard'>Sign Up</Link>  
+          </button> */}
         </div>
 
         <div className="menu-toggle">
