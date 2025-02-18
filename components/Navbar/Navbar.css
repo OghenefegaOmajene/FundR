@@ -8,28 +8,33 @@
     display: flex;
     align-items: center;
     font-family: "Exo 2", serif;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* border: 2px solid black; */
     top: 0;
+    /* gap: 100px; */
 }
 .navLogo{
     /* background-color: paleturquoise; */
     height: 100%;
-    width: 10%;
+    width: 20%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .navLogo img{
-    width: 100%;
+    width: 60%;
     height: 80%;
 }
 .nav{
     /* background-color: palevioletred; */
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+.nav a{
+    color: #9a59ff;
 }
 .navBtn{
     width: 20%;
@@ -49,7 +54,7 @@
     border: 0;
     padding: 15px;
     border-radius: 10px;
-    width: 50%;
+    width: 60%;
 }
 .signUp a, .logIn a{
     text-decoration: none;
@@ -81,3 +86,199 @@
     transition: 1s;
     background-color: #9a59ff;
 } */
+
+
+.navBarToggle {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+
+#checkbox {
+    display: none;
+  }
+  
+  .navToggle {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+    /* border: 2px solid black; */
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(176, 92, 255);
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .navToggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .navToggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .navToggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .navToggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .navToggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+
+@media screen and (max-width: 1070px) {
+    .navLogo img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .navBtn{
+        width: 20%;
+        margin-left: 200px;
+        height: 90%;
+    }
+    .navBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .navToggle{
+        display: flex;
+    }
+    .navBarToggle{
+        display: block;
+        /* background-color: #0b5c35; */
+        width: 80px;
+        border-radius: 0;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav{
+        display: none;
+        flex-direction: column;
+        /* border: 2px solid wheat; */
+        position: fixed;
+        top: 100px;
+        align-items: center;
+        right: 0px;
+        width: 100%;
+        height: 250px; 
+        border-radius: 0;
+        background-color: rgb(26, 20, 20);
+        backdrop-filter: blur(30px);
+        z-index: 1000;
+        padding: 20px 0;
+    }
+    .nav a{
+        text-align: start;
+        flex-direction: column;
+        padding-left: 10px;
+        font-size: 27px;
+        /* border: 1px solid white; */
+    }
+    .nav.open{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .toggle{
+      display: block;
+    } */
+}
+
+@media screen and (max-width: 940px) {
+    .navLogo img{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .navLogo{
+        width: 40%;
+    }
+    .navLogo img{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 670px) {
+    .navBtn{
+        width: 30%;
+        margin-left: 100px;
+        height: 90%;
+        display: flex;
+        justify-content: end;
+    }
+    .logIn{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .navBtn{
+        width: 30%;
+        margin-left: 100px;
+        height: 90%;
+        display: flex;
+        justify-content: end;
+    }
+    .logIn{
+        width: 100%;
+    }
+    .navLogo{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navLogo{
+        width: 60%;
+    }
+    .navLogo img{
+        width: 100%;
+    }
+    .navBtn{
+        width: 40%;
+        display: flex;
+        justify-content: end;
+    }
+}

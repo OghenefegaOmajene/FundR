@@ -34,9 +34,9 @@ const Navbar = () => {
           </button> */}
         </div>
 
-        <div className="menu-toggle">
+        <div className="navBarToggle">
             <input type="checkbox" id="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
-            <label htmlFor="checkbox" className="toggle">
+            <label htmlFor="checkbox" className="navToggle">
             <div className="bars" id="bar1"></div>
             <div className="bars" id="bar2"></div>
             <div className="bars" id="bar3"></div>
