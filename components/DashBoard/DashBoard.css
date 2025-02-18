@@ -183,7 +183,7 @@
 
 @media screen and (max-width: 800px) {
     .dashboard{
-        height: 170vh;
+        height: 120vh;
     }
     .content{
         display: grid;
@@ -194,7 +194,6 @@
     .overview{
         grid-column: 1 / span 3;
         grid-row: 1;
-        height: 500px;
     }
     .totalLoan{
         grid-column: 1 / span 3;
@@ -228,7 +227,7 @@
 
 @media screen and (max-width: 760px) {
     .dashboard{
-        height: 150vh;
+        height: 250vh;
     }
     .content{
         display: grid;
