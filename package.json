@@ -22,7 +22,8 @@
     "react-phone-number-input": "^3.4.11",
     "react-router-dom": "^7.1.5",
     "react-step-progress-bar": "^1.0.3",
-    "recharts": "^2.15.1"
+    "recharts": "^2.15.1",
+    "swiper": "^11.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

@@ -81,6 +81,7 @@
 
 
 import React from 'react';
+import './Chart.css'
 import { AreaChart, Area, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 // Data with computed MonthlyTotal
@@ -116,7 +117,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 
 const Chart = () => {
   return (
-    <div style={{ width: '100%', height: 300 }}> {/* Increased height for better visibility */}
+    <div className="chart-container" style={{ width: '100%', height: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={processedData}>
           <Area type="monotone" dataKey="Personal" stroke="#ff0000" fill="#ff8080" strokeWidth={3} />
@@ -124,12 +125,13 @@ const Chart = () => {
           <Area type="monotone" dataKey="Business" stroke="#001ba1" fill="#006fca" strokeWidth={3} />
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
-          <YAxis />
+          <YAxis className='yAxis'/>
           <Tooltip content={<CustomTooltip />} />
           <Legend />
         </AreaChart>
       </ResponsiveContainer>
     </div>
+
   );
 };
 

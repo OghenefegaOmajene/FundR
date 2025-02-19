@@ -4,13 +4,21 @@ import Chart, {data} from '../Chart';
 import Chart2 from '../Chart2';
 import MiniNav from '../MinNav/MiniNav';
 import CurrentLoan from '../CurrentLoan';
-import BankCard from '../BankCard/BankCard';
+import MasterCard from '../BankCards/MasterCard/MasterCard';
+import ApplePay from '../BankCards/ApplePay/ApplePay';
 import LoanDeals from '../LoanDeals/LoanDeals';
 import Activities from '../Activities/Activities'
 import Overview from '../Overview/Overview';
 import { FaApplePay } from "react-icons/fa";
 import { FaPaypal } from "react-icons/fa";
-import { FaAmazonPay } from "react-icons/fa";
+import { RiMastercardFill } from "react-icons/ri";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import 'swiper/css/pagination';
+
+import { EffectCards, Autoplay, Pagination } from 'swiper/modules';
 
 const DashBoard = () => {
     const borrowedAmount = 96550;
@@ -49,23 +57,43 @@ const DashBoard = () => {
                     <CurrentLoan borrowed={borrowedAmount} remaining={35723}/>
                 </div>
                 
-                <BankCard></BankCard>
+                {/* <Swiper
+                    effect={'cards'}
+                    grabCursor={true}
+                    modules={[EffectCards, Autoplay, Pagination]}
+                    className="mySwiper"
+                    loop={true} 
+                    autoplay={{ 
+                        delay: 0, 
+                        disableOnInteraction: false 
+                    }}
+                    speed={4000}
+                >
+                    <SwiperSlide>
+                        <MasterCard></MasterCard>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ApplePay></ApplePay>
+                    </SwiperSlide>
+                </Swiper> */}
+                
+                    <MasterCard></MasterCard>
+                    <p className='paymentOption'>
+                        MasterCard
+                        <i className='paymentIcon'><RiMastercardFill /></i>
+                    </p>
+                 
                     <p className='paymentOption'>
                         ApplePay
                         <i className='paymentIcon'><FaApplePay /></i>
                     </p>
-                 
+
                     <p className='paymentOption'>
                         PayPal
                         <i className='paymentIcon'><FaPaypal /></i>
                     </p>
-
-                    <p className='paymentOption'>
-                        Amazon Pay
-                        <i className='paymentIcon'><FaAmazonPay /></i>
-                    </p>
                  
-                <button className='changePayment'>See More</button>
+                <button className='changePayment'>Add New Card</button>
             </div>
 
             <div className="hotLoanDeals">

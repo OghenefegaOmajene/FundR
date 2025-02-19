@@ -144,6 +144,22 @@
 
 
 
+.swiper {
+    width: 80%;
+    height: 140px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    /* border: 3px solid black; */
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: transparent;
+  }
 
 @media screen and (max-width: 1200px) {
     .dashboard{
@@ -330,3 +346,13 @@
     }
     
 } */
+
+@media (max-width: 650px) {
+    .totalLoan {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .totalLoan p, .totalLoan h3{
+        margin-left: 20px;
+    }
+  }

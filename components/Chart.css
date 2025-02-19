@@ -1,0 +1,17 @@
+
+  
+  @media (max-width: 768px) {
+    .chart-container {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .chart-container {
+      max-width: 100%; 
+      /* border: 2px solid black; */
+    }
+    .yAxis{
+        font-size: 13px;
+    }
+  }

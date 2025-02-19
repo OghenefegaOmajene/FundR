@@ -1,13 +1,13 @@
 import React from 'react'
-import './BankCard.css'
-import chip from '../../images/chip.png'
-import mastercard from '../../images/mastercard.png'
+import './MasterCard.css'
+import chip from '../../../images/chip.png'
+import mastercard from '../../../images/mastercard.png'
 
-const BankCard = () => {
+const MasterCard = () => {
   return (
  
         <div className="card">
-            <div className="card front-face">
+
                 <header>
                     <span className="masterCard">
                         <img src={mastercard} alt="" />
@@ -33,24 +33,9 @@ const BankCard = () => {
                         
                     </div>
                 </div>
-            </div>
-
-            <div className="card back-face">
-                <h6>
-                For customer service call +234-4104-9407 or email at
-                danielsfega@gmail.com
-                </h6>
-                
-                <span className="magnetic-strip"></span>
-                <div className="cvv"><i>005</i></div>
-                   
-                <h5>
-                    If card details are found and is not yours, please contact our support team immediately!
-                </h5>
-            </div>
         </div>
 
   )
 }
 
-export default BankCard
+export default MasterCard

@@ -47,7 +47,7 @@ const Layout = () => {
         <Route path="/DashBoard/Loan" element={<Loan />} /> {/* Loan under Dashboard */}
 
         {/* Catch-all route (optional) */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/HomePage" />} />
       </Routes>
     </>
   );
