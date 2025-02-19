@@ -1,34 +1,10 @@
-// import { BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
-// import { useState } from "react";
-// import HomePage from "../pages/HomePage/HomePage";
-// import Loan from "../pages/Loan/Loan";
-// import Sidebar from "../components/Sidebar/Sidebar";
-// import DashBoard from "../components/DashBoard/DashBoard";
-
-// const AppRouter = () => {
-  
-//   return (
-//     <Router>
-//       <Sidebar  />
-//       <Routes>
-//         <Route path="/" element={<Navigate to="/HomePage" />} />
-//         <Route path="/HomePage" element={<Navigate to="/HomePage" />} />
-//         <Route path="/DashBoard" index element={<DashBoard/>} />
-//         <Route path="/Loan" element={<Loan />} />
-//       </Routes>
-//     </Router>
-//   );
-// };
-
-// export default AppRouter;
-
-
 
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
 import Loan from "../pages/Loan/Loan";
 import Sidebar from "../components/Sidebar/Sidebar";
-import DashBoard from "../components/DashBoard/DashBoard";
+import DashBoard from "../pages/DashBoard/DashBoard";
+import UserLogin from "../pages/UserLogin/UserLogin";
 
 const Layout = () => {
   const location = useLocation();
@@ -41,6 +17,7 @@ const Layout = () => {
         {/* Redirect root to HomePage */}
         <Route path="/" element={<Navigate to="/HomePage" />} />
         <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/UserLogin" element={<UserLogin />} />
 
         {/* Dashboard and its sub-routes */}
         <Route path="/DashBoard" element={<DashBoard />} />

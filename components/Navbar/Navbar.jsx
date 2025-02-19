@@ -27,7 +27,7 @@ const Navbar = () => {
 
         <div className="navBtn">
           <button className='logIn'>
-            <Link to='/DashBoard'>Login</Link>  
+            <Link to='/UserLogin'>Login</Link>  
           </button>
           {/* <button className='logIn'>
             <Link to='/DashBoard'>Sign Up</Link>  

@@ -147,7 +147,7 @@
 .swiper {
     width: 80%;
     height: 140px;
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    
     /* border: 3px solid black; */
   }
   
@@ -253,7 +253,7 @@
     .content{
         display: grid;
         grid-template-columns: 2fr 2fr 2fr; /* 3 columns: First two are equal, third is smaller */
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important; /* 3 equal rows */
+        grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr !important; /* 3 equal rows */
         gap: 10px;
     }
     .overview{

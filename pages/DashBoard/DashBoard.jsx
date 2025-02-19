@@ -1,14 +1,14 @@
 import React from 'react'
 import './DashBoard.css'
-import Chart, {data} from '../Chart';
-import Chart2 from '../Chart2';
-import MiniNav from '../MinNav/MiniNav';
-import CurrentLoan from '../CurrentLoan';
-import MasterCard from '../BankCards/MasterCard/MasterCard';
-import ApplePay from '../BankCards/ApplePay/ApplePay';
-import LoanDeals from '../LoanDeals/LoanDeals';
-import Activities from '../Activities/Activities'
-import Overview from '../Overview/Overview';
+import Chart, {data} from '../../components/Chart';
+import Chart2 from '../../components/Chart2';
+import MiniNav from '../../components/MinNav/MiniNav';
+import CurrentLoan from '../../components/CurrentLoan';
+import MasterCard from '../../components/BankCards/MasterCard/MasterCard';
+import ApplePay from '../../components/BankCards/ApplePay/ApplePay';
+import LoanDeals from '../../components/LoanDeals/LoanDeals';
+import Activities from '../../components/Activities/Activities'
+import Overview from '../../components/Overview/Overview';
 import { FaApplePay } from "react-icons/fa";
 import { FaPaypal } from "react-icons/fa";
 import { RiMastercardFill } from "react-icons/ri";
