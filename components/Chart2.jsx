@@ -38,6 +38,7 @@ const customizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
+  
   return (
     <text
       x={x}
@@ -68,7 +69,7 @@ const Chart2 = () => {
       }}
     >
       <h3>Loan Allocation by Category (in %)</h3>
-      <ResponsiveContainer width="100%" height="70%">
+      <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             data={data2}

@@ -30,7 +30,7 @@
     border-bottom-right-radius: 20px;
   }
 .personalInfo{
-  border: 3px solid crimson;
+  /* border: 3px solid crimson; */
   width: 90%;
   height: 100%;
   display: flex;
@@ -78,7 +78,7 @@
     height: 25%;
 }
 .paymentDetails{
-  border: 3px solid crimson;
+  /* border: 3px solid crimson; */
   width: 90%;
   height: 100%;
   display: flex;
