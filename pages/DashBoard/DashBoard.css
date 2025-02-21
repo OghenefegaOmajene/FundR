@@ -255,6 +255,7 @@
         grid-template-columns: 2fr 2fr 2fr; /* 3 columns: First two are equal, third is smaller */
         grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr !important; /* 3 equal rows */
         gap: 10px;
+        margin-top: 20px;
     }
     .overview{
         grid-column: 1 / span 3;
