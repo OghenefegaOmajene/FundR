@@ -10,6 +10,7 @@ const UserLogin = () => {
   return (
     <div className='formBg'>
         <form className="userLoginForm">
+
             <div className="email">
                 <label>Email </label>
                 <div className="inputForm">
@@ -36,7 +37,7 @@ const UserLogin = () => {
                 </button>
             </div>
             
-            <p className="p">Don't have an account? <span className="span">Sign Up</span>
+            <p className="p">Don't have an account? <Link className='span' to='/UserSignUp'>Sign Up</Link>
 
             </p><p className="p line">Or With</p>
 

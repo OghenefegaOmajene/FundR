@@ -5,6 +5,7 @@ import Loan from "../pages/Loan/Loan";
 import Sidebar from "../components/Sidebar/Sidebar";
 import DashBoard from "../pages/DashBoard/DashBoard";
 import UserLogin from "../pages/UserLogin/UserLogin";
+import UserSignUp from "../pages/UserSignUp/UserSignUp";
 
 const Layout = () => {
   const location = useLocation();
@@ -18,6 +19,7 @@ const Layout = () => {
         <Route path="/" element={<Navigate to="/HomePage" />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/UserLogin" element={<UserLogin />} />
+        <Route path="/UserSignUp" element={<UserSignUp />} />
 
         {/* Dashboard and its sub-routes */}
         <Route path="/DashBoard" element={<DashBoard />} />

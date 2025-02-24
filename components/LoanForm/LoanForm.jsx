@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './LoanForm.css'
+import MaterialUIStep from '../MaterialUIStep/MaterialUIStep'
 import VerticalStepper from '../VerticalStepper/VerticalStepper'
 import { CountrySelect, StateSelect, CitySelect } from 'react-country-state-city'
 import "react-country-state-city/dist/react-country-state-city.css";
@@ -41,7 +42,8 @@ const LoanForm = () => {
 
   return (
     <div className='loanFormBox'>
-        <VerticalStepper currentStep={step}></VerticalStepper>
+        <MaterialUIStep step={step}></MaterialUIStep>
+        {/* <VerticalStepper currentStep={step}></VerticalStepper> */}
 
         <form className="form">
             {step === 0 && (
@@ -150,33 +152,26 @@ const LoanForm = () => {
 
             {step === 1 && (
                     <div className="paymentDetails">
-                        <span className="title">Your Card Details</span>
-                        <div className="fields">
-                            <div className="group">
-                                <CountrySelect 
-                                    onChange={(e) => setcountryid(e.id)}
-                                    placeHolder="Select Country"
-                                />
+                        <span className="cardTitle">Your Card Details</span>
+                        
+                            <div className="group" id='firstName'>
+                                <input placeholder="" type="text" required=""/>
+                                <label htmlFor="name">Card Holder Name</label>
                             </div>
-                            <div className="group">
-                                <StateSelect 
-                                    disabled={!countryid}
-                                    countryid={countryid}
-                                    onChange={(e) => setstateid(e.id)}
-                                    placeHolder="Select State"
-                                />
+                            <div className="group" id='lastName'>
+                                <input placeholder="" type="text" required=""/>
+                                <label htmlFor="name">Card Number</label>
                             </div>
-                            <div className="group">
-                                <CitySelect 
-                                    disabled={!stateid}
-                                    countryid={countryid}
-                                    stateid={stateid}
-                                    placeHolder="Select City"
-                                />
+                        
+
+                        <div className="fields2">
+                            <div className="group" id='firstName'>
+                                <input placeholder="" type="text" required=""/>
+                                <label htmlFor="name">Expiry Date</label>
                             </div>
-                            <div className="group">
-                                <input type="text" required />
-                                <label>Street Address</label>
+                            <div className="group" id='lastName'>
+                                <input placeholder="" type="text" required=""/>
+                                <label htmlFor="name">CVV</label>
                             </div>
                         </div>
                     </div>

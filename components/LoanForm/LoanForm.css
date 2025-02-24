@@ -78,13 +78,18 @@
     height: 25%;
 }
 .paymentDetails{
-  /* border: 3px solid crimson; */
+  border: 3px solid crimson;
   width: 90%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+}
+.cardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  /* text-align: center; */
 }
 
 .fields{
