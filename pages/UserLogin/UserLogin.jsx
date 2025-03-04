@@ -1,12 +1,38 @@
 import React from 'react'
 import './UserLogin.css'
-import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Link, useNavigate } from 'react-router-dom';
 import { BiLogoGmail } from "react-icons/bi";
 import { IoKeySharp } from "react-icons/io5";
 import { FaGoogle } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 
 const UserLogin = () => {
+
+    const navigate = useNavigate(); // Initialize navigation
+
+  // Function to handle Sign In button click
+  const handleSignIn = (e) => {
+    e.preventDefault(); // Prevent form submission refresh
+
+    // Show Toastify notification
+    toast.success('Logged in successfully!', {
+      position: "top-right",
+      autoClose: 2000, // 2 seconds duration
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "dark",
+    });
+
+    // Navigate to Dashboard after the toast is done
+    setTimeout(() => {
+      navigate('/DashBoard');  // Redirect to Dashboard
+    }, 2000); // Match autoClose duration
+  };
+
   return (
     <div className='formBg'>
         <form className="userLoginForm">
@@ -32,8 +58,8 @@ const UserLogin = () => {
             </div>
 
             <div className="s">
-                <button className="signInBtn">
-                    <Link to='/DashBoard'>Sign In</Link>
+                <button className="signInBtn" onClick={handleSignIn}>
+                    <Link to=''>Log In</Link>
                 </button>
             </div>
             
@@ -52,6 +78,8 @@ const UserLogin = () => {
                 </button>
             </div>
         </form>
+
+        <ToastContainer />
     </div>
   )
 }

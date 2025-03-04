@@ -53,7 +53,7 @@ const UserSignUp = () => {
                 </button>
             </div>
             
-            <p className="p">Already have an account? <Link to='/UserLogin' className='span'>Sign In</Link>
+            <p className="p">Already have an account? <Link to='/UserLogin' className='span'>Log In</Link>
 
             </p>
         </form>
