@@ -1,5 +1,5 @@
 import React from 'react'
-import '../UserSignUp.css'
+import './UserSignUp.css'
 import { Link } from 'react-router-dom';
 import { BiLogoGmail } from "react-icons/bi";
 import { IoKeySharp } from "react-icons/io5";
