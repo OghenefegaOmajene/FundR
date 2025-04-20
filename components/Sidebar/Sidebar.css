@@ -23,7 +23,7 @@
     z-index: 10;
 }    
 .logo{
-    width: 70%;
+    width: 50%;
     height: 80px;
     /* border: 1px solid black; */
 }
@@ -62,15 +62,15 @@
     /* border: 1px solid black; */
 }
 .sideNavLinks a:hover, .logOut:hover{
-    border-left: 10px solid #9560F9;
-    color: #9560F9;
+    border-left: 10px solid #7fa842;
+    color: #7fa842;
     transition: 1s;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-left: 10px;
 }
 .sideNavLinks a:hover i{
-    color: #9560F9;
+    color: #7fa842;
 }
 
 
@@ -107,7 +107,7 @@
   .bars {
     width: 100%;
     height: 5px;
-    background-color: #9560F9;
+    background-color: #7fa842;
     border-radius: 4px;
   }
   

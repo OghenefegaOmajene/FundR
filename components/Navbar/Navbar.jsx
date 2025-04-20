@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import logo from '../../images/logo3.png'
+import logo from '../../images/loanify.png'
 import { Link } from 'react-router-dom'
 // import Contact from '../Contact/Contact';
 
