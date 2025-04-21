@@ -1,13 +1,11 @@
 import React, {useState} from 'react'
 import './Sidebar.css'
-import { TbLayoutDashboardFilled } from "react-icons/tb";
-import { FaHome } from "react-icons/fa";
-import { FaChartPie } from "react-icons/fa";
+import { TbActivity } from "react-icons/tb";
 import { FaSackDollar } from "react-icons/fa6";
-import { GiNotebook } from "react-icons/gi";
-import { IoLogOut } from "react-icons/io5";
+import { GiBinoculars, GiNotebook } from "react-icons/gi";
+import { IoLogOut, IoCard } from "react-icons/io5";
 import logo from '../../images/loanify.png'
-import Loan from '../../pages/Loan/Loan';
+// import Loan from '../../pages/Loan/Loan';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -35,29 +33,34 @@ const Sidebar = () => {
 
         <div className="sideNavLinks">
           <Link to='/DashBoard'>
-            <i><TbLayoutDashboardFilled /></i> 
-            <p>Dashboard</p>
+            <i><GiBinoculars /></i> 
+            <p>Overview</p>
           </Link>
           
-          <Link to='/'>
+          {/* <Link to='/'>
             <i><FaHome /></i> 
             <p>Home</p>
-          </Link>
+          </Link> */}
 
-          <Link to=''>
+          {/* <Link to=''>
             <i><FaChartPie /> </i>
             <p>Statistics</p>
-          </Link>
+          </Link> */}
 
 
           <Link to='/DashBoard/Loan'>
-            <i><FaSackDollar /></i> 
-            <p>Loans</p>  
+            <i><GiNotebook /></i> 
+            <p>Apply for Loans</p>  
           </Link>
 
           <Link to=''>
-            <i><GiNotebook /></i> 
-            <p>Activities</p>
+            <i><TbActivity /></i> 
+            <p>Transactions</p>
+          </Link>
+
+          <Link to=''>
+            <i><IoCard /></i> 
+            <p>Payment</p>
           </Link>
         </div>
           

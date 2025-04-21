@@ -15,6 +15,7 @@ const Overview = () => {
   return (
     <div className="overviewBox">
       {/* Personal Loans */}
+      <h3>Loans</h3>
       <div className="loanBox">
         <FaPersonDotsFromLine className="loanIcon" />
         <h3>Personal Loans</h3>
