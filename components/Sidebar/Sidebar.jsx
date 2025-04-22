@@ -64,12 +64,12 @@ const Sidebar = () => {
           </Link>
         </div>
           
-        <div className="logOutBtn">
+        {/* <div className="logOutBtn">
           <a href="" className='logOut'>
             <i><IoLogOut /></i> 
             <p>Log Out</p>
           </a>
-        </div>
+        </div> */}
           
       </div>
     </>

@@ -6,8 +6,8 @@ import { IoMoon, IoHome } from "react-icons/io5";
 const MiniNav = () => {
   return (
     <nav className='miniNav'>
+      <h5>Welcome, Fega</h5>
         <i><IoHome /></i>
-        <i><IoMoon/></i>
         <img src={avatar} alt="" className='avatar'/>
     </nav>
   )

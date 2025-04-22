@@ -36,11 +36,12 @@ const CurrentLoan = ({borrowed, remaining }) => {
             position: "absolute",
             width: "100%",
             height: "100%",
-            background: "radial-gradient(circle, #d8b1ff 30%, transparent 70%)",
+            background: "radial-gradient(circle, black 30%, transparent 70%)",
             filter: "blur(10px)",
             borderRadius: "50%",
             zIndex: 0,
-            
+    //         border-left: 1px solid;
+    // border-image: linear-gradient(to bottom, #87c93e, #407016, #133402) 1;
           }}
         ></div>
 
@@ -52,8 +53,8 @@ const CurrentLoan = ({borrowed, remaining }) => {
             textSize: "16px",
             pathTransitionDuration: animationDuration / 1000, // Smooth transition
             pathColor: `url(#gradient)`,
-            textColor: "#9a59ff",
-            trailColor: "#e0d3ff",
+            textColor: "black",
+            trailColor: "rgb(240, 240, 240)",
             backgroundColor: "#fff",
           })}
         />
@@ -66,7 +67,7 @@ const CurrentLoan = ({borrowed, remaining }) => {
             left: "50%",
             transform: "translate(-50%, -50%)",
             textAlign: "center",
-            color: "#6a11cb",
+            color: "white",
             fontWeight: "bold",
           }}
         >
@@ -78,8 +79,8 @@ const CurrentLoan = ({borrowed, remaining }) => {
         <svg style={{ height: 0 }}>
           <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#9a59ff" />
-              <stop offset="100%" stopColor="#ff7ce0" />
+              <stop offset="0%" stopColor="black" />
+              <stop offset="100%" stopColor="black" />
             </linearGradient>
           </defs>
         </svg>

@@ -46,28 +46,29 @@ const DashBoard = () => {
             </div>
 
             <div className="totalLoan">
-                <p>Total Loan (past 5 months)</p>
+                <p>Monthly Loan Analysis (past 5 months)</p>
                 <h3><b>₦{totalLoanSum.toLocaleString()}</b></h3> {/* Display dynamic total */}
                 <Chart></Chart>
             </div>
 
             <div className="currentLoan">
                 <div>
-                    <h3>Your Current Loan: <span style={{color: "#9a59ff"}}>₦{borrowedAmount.toLocaleString()}</span></h3>
+                    <h3>Your Current Loan: <span>₦{borrowedAmount.toLocaleString()}</span></h3>
                     <CurrentLoan borrowed={borrowedAmount} remaining={35723}/>
                 </div>
+                <button>See more details</button>
                 
                 {/* <Swiper
                     effect={'cards'}
                     grabCursor={true}
-                    modules={[EffectCards, Autoplay, Pagination]}
+                    modules={[EffectCards, Pagination]}
                     className="mySwiper"
                     loop={true} 
-                    autoplay={{ 
-                        delay: 0, 
-                        disableOnInteraction: false 
-                    }}
-                    speed={4000}
+                    // autoplay={{ 
+                    //     delay: 0, 
+                    //     disableOnInteraction: false 
+                    // }}
+                    // speed={4000}
                 >
                     <SwiperSlide>
                         <MasterCard></MasterCard>
@@ -77,8 +78,8 @@ const DashBoard = () => {
                     </SwiperSlide>
                 </Swiper> */}
                 
-                    <MasterCard></MasterCard>
-                    <p className='paymentOption'>
+                    {/* <MasterCard></MasterCard> */}
+                    {/* <p className='paymentOption'>
                         MasterCard
                         <i className='paymentIcon'><RiMastercardFill /></i>
                     </p>
@@ -93,10 +94,10 @@ const DashBoard = () => {
                         <i className='paymentIcon'><FaPaypal /></i>
                     </p>
                  
-                <button className='changePayment'>Add New Card</button>
+                <button className='changePayment'>Add New Card</button> */}
             </div>
 
-            <div className="hotLoanDeals">
+            {/* <div className="hotLoanDeals">
                 <h3>Hot Loan Deals</h3>
                 <LoanDeals></LoanDeals>
             </div>
@@ -104,7 +105,7 @@ const DashBoard = () => {
         
             <div className="piechart">
                 <Chart2></Chart2>
-            </div>
+            </div> */}
 
             <div className="activities">
                 <Activities></Activities>

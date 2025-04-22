@@ -2,7 +2,7 @@ import React from "react";
 import { PieChart, Pie, Tooltip, ResponsiveContainer, Cell } from "recharts";
 import { data } from "./Chart"; // Import the loan data
 
-const colors = ["#ff8080", "#9560F9", "#006fca"];
+const colors = ["black", "black", "black"];
 
 // Compute total for the past 5 months
 const totalPersonal = data.reduce((sum, entry) => sum + entry.Personal, 0);
@@ -43,7 +43,7 @@ const customizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }
     <text
       x={x}
       y={y}
-      fill="black"
+      fill="#54a229"
       fontSize={14}
       fontWeight="bold"
       textAnchor="middle"

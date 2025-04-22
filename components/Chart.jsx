@@ -39,9 +39,9 @@ const Chart = () => {
     <div className="chart-container" style={{ width: '100%', height: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={processedData}>
-          <Area type="monotone" dataKey="Personal" stroke="#ff0000" fill="#ff8080" strokeWidth={3} />
-          <Area type="monotone" dataKey="Student" stroke="#9560F9" fill="#9F9CEF" strokeWidth={3} />
-          <Area type="monotone" dataKey="Business" stroke="#001ba1" fill="#006fca" strokeWidth={3} />
+          <Area type="monotone" dataKey="Personal" stroke="rgb(0, 0, 0)" fill=" #000000" strokeWidth={3} />
+          <Area type="monotone" dataKey="Student" stroke="rgb(0, 0, 0)" fill=" #000000" strokeWidth={3} />
+          <Area type="monotone" dataKey="Business" stroke="rgb(0, 0, 0)" fill=" #000000" strokeWidth={3} />
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
           <YAxis className='yAxis'/>

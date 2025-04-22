@@ -1,34 +1,35 @@
 [
     {
-        "icon": "<GiReceiveMoney />",
-        "action": "Borrowed",
-        "name": "RTX 5090",
-        "dateBorrowed": "11-02-25",
-        "amount": "2,000,000",
-        "status": "In Debt"
+        "id": 1,
+        "date": "Mar 19th, 2025",
+        "duration": "2 months",
+        "type": "Personal",
+        "status": "Completed",
+        "amount": "₦38,000"
     },
     {
-        "icon": "<GiTakeMyMoney />",
-        "action": "Paid",
-        "name": "Pizza",
-        "dateBorrowed": "11-02-25",
-        "amount": "5,000",
-        "status": "Cleared"
+        "id": 2,
+        "date": "Apr 11th, 2025",
+        "duration": "12 months",
+        "type": "Personal",
+        "status": "Completed",
+        "amount": "₦127,550"
     },
     {
-        "icon": "<GiReceiveMoney />",
-        "action": "Borrowed",
-        "name": "Mclaren 720s",
-        "dateBorrowed": "11-02-25",
-        "amount": "30,000,000",
-        "status": "In Debt"
+        "id": 3,
+        "date": "Apr 26th, 2025",
+        "duration": "6 months",
+        "type": "Student",
+        "status": "Incomplete",
+        "amount": "₦8,000"
     },
     {
-        "icon": "<GiTakeMyMoney />",
-        "action": "Paid",
-        "name": "Data",
-        "dateBorrowed": "11-02-25",
-        "amount": "1,700",
-        "status": "Cleared"
+        "id": 4,
+        "date": "Apr 30th, 2025",
+        "duration": "12 months",
+        "type": "Business",
+        "status": "Completed",
+        "amount": "₦22,300"
     }
+    
 ]

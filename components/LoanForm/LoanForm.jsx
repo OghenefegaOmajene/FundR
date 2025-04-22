@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './LoanForm.css'
 import MaterialUIStep from '../MaterialUIStep/MaterialUIStep'
-import VerticalStepper from '../VerticalStepper/VerticalStepper'
+// import VerticalStepper from '../VerticalStepper/VerticalStepper'
 import { CountrySelect, StateSelect, CitySelect } from 'react-country-state-city'
 import "react-country-state-city/dist/react-country-state-city.css";
 import PhoneInput from 'react-phone-number-input';
@@ -164,7 +164,7 @@ const LoanForm = () => {
                             </div>
                         
 
-                        <div className="fields2">
+                        <div className="paymentFields">
                             <div className="group" id='firstName'>
                                 <input placeholder="" type="text" required=""/>
                                 <label htmlFor="name">Expiry Date</label>

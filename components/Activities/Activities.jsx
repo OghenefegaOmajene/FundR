@@ -5,18 +5,51 @@ import { GiReceiveMoney, GiTakeMyMoney } from "react-icons/gi";
 
 const Activities = () => {
   // Madiv icons from JSON to actual comdivonents
-  const getIcon = (action) => {
-    return action === "Borrowed" ? <GiReceiveMoney className="icon" /> : <GiTakeMyMoney className="icon" />;
-  };
+  // const getIcon = (action) => {
+  //   return action === "Borrowed" ? <GiReceiveMoney className="icon" /> : <GiTakeMyMoney className="icon" />;
+  // };
 
   return (
     <div className="activityBox">
-      <div className="activityTxt"> 
-        <h1>Recent Activities</h1>
+      <div className="transactionsHead">
+        <h2 className='h2'>Recent Loan History</h2>
       </div>
-      
-      <div className="activitiesList">
-        {activities.map((activity, index) => (
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Duration</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {activities.map((activity) => (
+            <tr key={activity.id}>
+              {/* <td className="receiver">
+                <input type="checkbox" />
+                <img src={transaction.img} alt={transaction.name} />
+                <span>{transaction.name}</span>
+              </td> */}
+              <td>{activity.date}</td>
+              <td>{activity.type}</td>
+              <td>{activity.duration}</td>
+              <td className="amount11">{activity.amount}</td>
+              <td>
+                <span className={`status ${activity.status.toLowerCase()}`}>
+                  {activity.status}
+                </span>
+              </td>
+              <td>
+                <button className="details-btn">Details</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+        {/* {activities.map((activity, index) => (
           <div key={index} className="activityItem">
 
             <div className="iconContainer">{getIcon(activity.action)}</div>
@@ -37,8 +70,7 @@ const Activities = () => {
             </div>
 
           </div>
-        ))}
-      </div>
+        ))} */}
     </div>
   );
 };

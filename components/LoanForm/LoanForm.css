@@ -8,7 +8,7 @@
     height: 600px;
     width: 90%;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: white;
     /* border: 3px solid black; */
     /* border-radius: 20px; */
@@ -78,17 +78,18 @@
     height: 25%;
 }
 .paymentDetails{
-  border: 3px solid crimson;
+  /* border: 3px solid crimson; */
   width: 90%;
-  height: 100%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
 }
 .cardTitle {
   font-size: 24px;
   font-weight: 600;
+  margin-bottom: 10px;
   /* text-align: center; */
 }
 
@@ -112,6 +113,10 @@
     /* padding-right: 50px; */
     justify-content: space-between;
     /* align-items: center; */
+}
+.paymentFields{
+  /* background-color: #9a59ff; */
+  display: flex;
 }
 .fields3{
     width: 100%;
@@ -161,8 +166,9 @@
   justify-content: space-around;
 }
   .Buttons button {
-    background-color: #9a59ff;
-    color: #fff;
+    background-color: black;
+    /* color: #54a229; */
+    color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -174,11 +180,11 @@
   }
   
   .Buttons button:hover {
-    border: 1px solid #9a59ff;
+    border: 1px solid black;
     transition: 0.8s;
     letter-spacing: 2px;
     background-color: transparent;
-    color: #9a59ff;
+    color: black;
   }
   
   .title {

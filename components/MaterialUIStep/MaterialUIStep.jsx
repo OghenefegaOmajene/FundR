@@ -6,7 +6,7 @@ import StepLabel from '@mui/material/StepLabel';
 import {StepConnector} from '@mui/material';
 import { styled } from "@mui/material";
 
-const steps = ["Personal Details", "Payment Details", "Summary"];
+const steps = ["Personal Details", "Payment Details", "Loan Plan"];
 
 
 const CustomStepConnector = styled(StepConnector)({
@@ -16,7 +16,7 @@ const CustomStepConnector = styled(StepConnector)({
       minHeight: "60px", // Adjust height of the connecting line
     },
     "&.Mui-completed .MuiStepConnector-line": {
-        borderColor: "#9a59ff",
+        borderColor: "#54a229",
     },
     // "& .MuiStepConnector-root": {
     //     marginLeft: "24px",
@@ -61,7 +61,7 @@ const PulsatingStep = styled(StepLabel)({
 
   "& .MuiStepIcon-root.Mui-active": {
     // backgroundColor: "",
-    color: "#9a59ff",
+    color: "black",
     borderRadius: "50%",
     animation: "pulsate 1.5s infinite",
     // padding: "8px",
@@ -69,22 +69,22 @@ const PulsatingStep = styled(StepLabel)({
 
   "& .MuiStepIcon-root.Mui-completed": {
     backgroundColor: "f",
-    color: "#9a59ff",
+    color: "#54a229",
     borderRadius: "50%",
   },
 
   "@keyframes pulsate": {
     "0%": {
       transform: "scale(1)",
-      boxShadow: "0 0 5px #9a59ff",
+      boxShadow: "0 0 5pxrgb(129, 129, 129)",
     },
     "50%": {
       transform: "scale(1.1)",
-      boxShadow: "0 0 15px #9a59ff",
+      boxShadow: "0 0 15pxrgb(105, 105, 105)",
     },
     "100%": {
       transform: "scale(1)",
-      boxShadow: "0 0 5px #9a59ff",
+      boxShadow: "0 0 5pxrgb(134, 134, 134)",
     },
   }
 });

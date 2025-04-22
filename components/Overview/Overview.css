@@ -2,25 +2,43 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: white;
     /* border: 2px solid black; */
 }
-.loanBox{
-    width: 30%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.553);
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
+.overviewBoxHead{
+    /* background-color: black; */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 30%;
+}
+.loanBox{
+    width: 100%;
+    height: 70%;
+    /* background-color: rgb(132, 41, 41); */
+    /* backdrop-filter: blur(20px); */
+    /* border-radius: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
+.loann{
+    /* border: 1px solid black; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
 .loanIcon {
-    font-size: 40px;
+    font-size: 30px;
     /* color: #7c0051; */
-    color: #5f32a8;
+    /* color: #5f32a8; */
     /* margin-bottom: 10px; */
 }
   

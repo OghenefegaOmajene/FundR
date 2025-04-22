@@ -7,16 +7,20 @@
     align-items: center;
     justify-content: end;
     gap: 10px;
-    color: #A3A7BE;
+    color: #000000;
 }
 .avatar{
     width: 50px;
     height: 100%;
     border-radius: 50px;
-    border: 2px solid #9a59ff;
+    border: 2px solid black;
+    /* border-image: linear-gradient(to bottom, #87c93e, #407016, #133402) 1; */
+}
+.miniNav i{
+    font-size: 20px;
 }
 .miniNav i:hover {
-    animation: shakeScale 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    /* animation: shakeScale 0.82s cubic-bezier(.36,.07,.19,.97) both; */
     backface-visibility: hidden;
     perspective: 1000px;
 }

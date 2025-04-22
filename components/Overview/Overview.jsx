@@ -15,26 +15,40 @@ const Overview = () => {
   return (
     <div className="overviewBox">
       {/* Personal Loans */}
-      <h3>Loans</h3>
-      <div className="loanBox">
-        <FaPersonDotsFromLine className="loanIcon" />
-        <h3>Personal Loans</h3>
-        <p><b>₦{totalPersonal.toLocaleString()}</b></p>
+      <div className="overviewBoxHead">
+        <h3 style={{marginLeft: "25px"}}>Cumulative Lifetime Loan</h3>
       </div>
 
-      {/* Student Loans */}
       <div className="loanBox">
-        <FaUserGraduate className="loanIcon" />
-        <h3>Student Loans</h3>
-        <p><b>₦{totalStudent.toLocaleString()}</b></p>
+        <div className="loann">
+          <FaPersonDotsFromLine className="loanIcon" />
+          <div className="loannInfo">
+            <h3>Personal Loans</h3>
+            <p><b>₦{totalPersonal.toLocaleString()}</b></p>
+          </div>
+          
+        </div>
+       
+        {/* Student Loans */}
+        <div className="loann">
+          <FaUserGraduate className="loanIcon" />
+          <div className="loannInfo">
+            <h3>Student Loans</h3>
+            <p><b>₦{totalStudent.toLocaleString()}</b></p>
+          </div>
+        </div>
+
+        {/* Business Loans */}
+        <div className="loann">
+          <TbBusinessplan className="loanIcon" />
+          <div className="loannInfo">
+            <h3>Business Loans</h3>
+            <p><b>₦{totalBusiness.toLocaleString()}</b></p>
+          </div>
+        </div>
       </div>
 
-      {/* Business Loans */}
-      <div className="loanBox">
-        <TbBusinessplan className="loanIcon" />
-        <h3>Business Loans</h3>
-        <p><b>₦{totalBusiness.toLocaleString()}</b></p>
-      </div>
+      
     </div>
   );
 }
